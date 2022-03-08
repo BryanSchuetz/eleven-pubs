@@ -1,0 +1,25 @@
+{
+  "name": "eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve & npx tailwindcss -i src/site/assets/tailwind.css -c tailwind.config.js -o dist/assets/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i src/site/assets/tailwind.css -c tailwind.config.js -o dist/assets/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@hotwired/turbo": "^7.1.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "alpinejs": "^3.9.1",
+    "html-minifier": "^4.0.0",
+    "js-yaml": "^4.1.0",
+    "liquidjs": "^9.33.0",
+    "luxon": "^2.3.1",
+    "tailwindcss": "^3.0.23",
+    "toml": "^3.0.0"
+  }
+}
