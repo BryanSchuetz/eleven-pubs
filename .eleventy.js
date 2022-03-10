@@ -6,14 +6,14 @@ const toml          = require("toml")
 
 module.exports = function (eleventyConfig) {
 
-  //tailwind config
+  //**Watch Targets**
+  
+  //tailwind
   eleventyConfig.addWatchTarget('./tailwind.config.js')
   eleventyConfig.addWatchTarget('./src/site/assets/tailwind.css')
 
   //**Passthroughs**
 
-  //Tailwind
-  eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './assets/style.css' })
   //Alpine
   eleventyConfig.addPassthroughCopy({'./node_modules/alpinejs/dist/cdn.js': './assets/js/alpine.js'})
   //Turbo
@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
   //Images
   eleventyConfig.addPassthroughCopy("./src/site/assets/images");
 
-  //**Custom Data files **
+  //**Custom Data Files **
 
   //Add yaml for global and scoped discrete data files
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
