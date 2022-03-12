@@ -1,12 +1,12 @@
 module.exports = {
-  content: ['dist/**/*.html'],
+  content: ["dist/**/*.html"],
   safelist: [],
   theme: {
     extend: {
       colors: {
-        change: 'orange',
+        change: "orange",
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
