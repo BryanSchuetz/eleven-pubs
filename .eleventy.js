@@ -4,6 +4,11 @@ const htmlmin = require("html-minifier");
 const yaml = require("js-yaml");
 const toml = require("toml");
 
+//scaffold for ghost api
+const pluginGhost = require("eleventy-plugin-ghost");
+require("dotenv").config();
+const { GHOST_URL, GHOST_KEY } = process.env;
+
 module.exports = function (eleventyConfig) {
   //**Watch Targets**
 
@@ -32,7 +37,7 @@ module.exports = function (eleventyConfig) {
   //Add toml for template data configuration
   eleventyConfig.addDataExtension("toml", (contents) => toml.parse(contents));
   // Layout aliases for convenience
-  eleventyConfig.addLayoutAlias("default", "_layouts/base.liquid");
+  eleventyConfig.addLayoutAlias("base", "_layouts/base.liquid");
 
   //**Filters**
 
@@ -62,6 +67,15 @@ module.exports = function (eleventyConfig) {
   //timestamp for cache busting
   eleventyConfig.addShortcode("version", function () {
     return now;
+  });
+
+  // **Plugins**
+  
+  //ghost api plugin
+  eleventyConfig.addPlugin(pluginGhost, {
+    url: GHOST_URL,
+    key: GHOST_KEY,
+    version: "v4",
   });
 
   //**Optimizations**

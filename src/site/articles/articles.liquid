@@ -1,0 +1,11 @@
+---
+pagination:
+  data: ghost.posts
+  size: 1
+  alias: post
+  layout: base.liquid
+permalink: "/articles/{{ post.slug }}/"
+---
+<h1>{{ post.title }}</h1>
+<p>{{ post.slug }}</p>
+{{ post.html }}
