@@ -5,8 +5,9 @@ const yaml = require("js-yaml");
 const toml = require("toml");
 
 //scaffold for ghost api
-const pluginGhost = require("eleventy-plugin-ghost");
-const { GHOST_URL, GHOST_KEY } = process.env;
+/* const pluginGhost = require("eleventy-plugin-ghost");
+require("dotenv").config();
+const { GHOST_URL, GHOST_KEY } = process.env; */
 
 module.exports = function (eleventyConfig) {
   //**Watch Targets**
@@ -71,11 +72,11 @@ module.exports = function (eleventyConfig) {
   // **Plugins**
   
   //ghost api plugin
-  eleventyConfig.addPlugin(pluginGhost, {
+/*   eleventyConfig.addPlugin(pluginGhost, {
     url: GHOST_URL,
     key: GHOST_KEY,
     version: "v4",
-  });
+  }); */
 
   //**Optimizations**
 
