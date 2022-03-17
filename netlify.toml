@@ -19,3 +19,13 @@
 [[redirects]]
   from = ""
   to = ""
+
+[[plugins]]
+package = "netlify-plugin-ghost-markdown"
+
+    [plugins.inputs]
+    ghostURL = "https://pubs.ghost.io"
+    ghostKey = "ddcfb6aa38bf16e51b082fb3bc"
+    postsDir = "./src/site/articles/"
+    assetsDir = "./src/site/assets/uploads/images/"
+    cacheFile = "./ghostMarkdownCache.json"
