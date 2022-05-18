@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .change {
-    color: black;
-  }
+.base-container{
+  margin-top: 130px;
 }

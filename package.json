@@ -11,14 +11,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.3",
+    "@11ty/eleventy": "^2.0.0-canary.8",
     "@hotwired/turbo": "^7.1.0",
-    "html-minifier": "^4.0.0",
+    "@jamshop/eleventy-filter-dump": "^1.0.4",
+    "@tailwindcss/forms": "^0.5.1",
     "@tailwindcss/typography": "^0.5.2",
     "alpinejs": "^3.9.1",
+    "debug": "^4.3.4",
+    "eleventy-plugin-time-to-read": "^1.2.0",
+    "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
     "liquidjs": "^9.33.0",
-    "luxon": "^2.3.1",
+    "luxon": "^2.4.0",
     "tailwindcss": "^3.0.23",
     "toml": "^3.0.0"
   }

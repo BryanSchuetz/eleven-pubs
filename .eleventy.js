@@ -4,7 +4,17 @@ const htmlmin = require("html-minifier");
 const yaml = require("js-yaml");
 const toml = require("toml");
 
+/* Debugging Filter */
+const dumpFilter = require("@jamshop/eleventy-filter-dump");
+/* Calculating Read Time */
+const timeToRead = require('eleventy-plugin-time-to-read');
+
 module.exports = function (eleventyConfig) {
+  //**Plugins**
+  eleventyConfig.addPlugin(timeToRead, {
+    style: 'short'
+  });
+  
   //**Watch Targets**
 
   //tailwind
@@ -12,6 +22,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/site/assets/tailwind.css");
 
   //**Passthroughs**
+
+  //Legacy CSS
+  eleventyConfig.addPassthroughCopy({
+    "./src/site/assets/css/legacy.css": "./assets/css/legacy.css",
+  }); 
 
   //Alpine
   eleventyConfig.addPassthroughCopy({
@@ -35,26 +50,33 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("base", "_layouts/base.liquid");
 
   //**Filters**
-
-  // a debug utility
-  eleventyConfig.addFilter("dump", (obj) => {
-    return util.inspect(obj);
+  //Array items include string
+  eleventyConfig.addFilter("pluck", function (arr, value) {
+    return arr.filter((item) => item.includes(value));
   });
+  //Array items do not include string
+  eleventyConfig.addFilter("pluckNot", function (arr, value) {
+    return arr.filter((item) => !item.includes(value));
+  });
+  // a debug utility
+  eleventyConfig.addFilter("dump", dumpFilter);
   // Grab excerpts and sections from a file
   eleventyConfig.addFilter("section", require("./src/utils/section.js"));
   // Compress and combine js files
   eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js"));
+  
   // Date helper for readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc",
     }).toFormat("LLLL d, y");
   });
-  //Date helper for abreviated machine date
-  eleventyConfig.addFilter("htmlDate", (dateObj) => {
+
+  //Relative date helper
+  eleventyConfig.addFilter("relativeDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc",
-    }).toFormat("y-MM-dd");
+    }).toRelative({unit: "days"});
   });
 
   //**Shortcodes**
@@ -64,7 +86,15 @@ module.exports = function (eleventyConfig) {
     return now;
   });
 
-
+  //**Custom Collections **/
+   eleventyConfig.addCollection("featuredPosts", function(collectionApi) {
+    return collectionApi.getFilteredByTag("hash-featured");
+  });
+  eleventyConfig.addCollection("justPosts", function(collectionApi) {
+    return collectionApi.getFilteredByTag("hash-post").sort(function(a,b){
+      return b.date - a.date
+    });
+  });
   //**Optimizations**
 
   //minify html
@@ -89,6 +119,7 @@ module.exports = function (eleventyConfig) {
   //dir settings
   return {
     dir: {
+      data: "_data",
       input: "src/site",
       output: "dist",
       layouts: "_layouts",

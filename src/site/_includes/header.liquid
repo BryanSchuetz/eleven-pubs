@@ -1,0 +1,57 @@
+<header>
+  <div class="header-utility_nav">
+    <div class="header-inner">
+      <ul class="header-nav">
+      {% for nav in site.nav-util %}
+        <li><a href="{{ nav.link }}">{{ nav.text }}</a></li>
+      {% endfor %}
+      </ul>
+{% comment %}<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','AukYSRSJxTT4Q-wp7Yry','2.0.0');
+</script>{% endcomment %}
+    <form target="_parent" action="https://www.dai.com/search" method="get">
+      <input type="text" class="st-default-search-input header-search" placeholder="Search" id="keywords" name="keywords"><!--<svg class="search" viewBox="0 0 447 446" preserveAspectRatio="xMinYMax meet"><use xlink:href="#search"></use></svg>--> </input>
+    </form>
+    </div>
+  </div>
+  <div class="header-site_nav"> 
+    <div class="header-inner">
+      <div class="header-inner--wrap">
+        <a class="header-inner--logo" href="https://www.dai.com"><svg class="logo header-flat--logo" viewBox="0 0 982 245" preserveAspectRatio="xMinYMax meet"><use xlink:href="#flat-logo"></use></svg></a>
+        <ul class="header-nav--main">
+          <li class="has-dropdown"><a id="who-we-are-nav"href="https://www.dai.com/#who-we-are{% if title == "Home" %}{{"_hash"}}{% endif %}" class="{% if page.url contains "who-we-are" %}{{"active"}}{% endif %}">Who We Are</a>{% unless page.title == "Home" %}<ul class="dropdown">
+            {% for item in site.nav-main-who %}
+              <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="https://www.dai.com{{ item.link }}">{{ item.text }}</a></li> 
+            {% endfor %}
+          </ul>{% endunless %}</li>
+          <li class="has-dropdown"><a id="our-work-nav" href="https://www.dai.com/#our-work{% if page.title == "Home" %}{{"_hash"}}{% endif %}" class="{% if page.url contains "our-work" %}{{"active"}}{% endif %}">Our Work</a>{% unless page.title == "Home" %}<ul class="dropdown">
+            {% for item in site.nav-main-our %}
+              <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="https://www.dai.com{{ item.link }}">{{ item.text }}</a></li>
+            {% endfor %}
+          </ul>{% endunless %}</li>
+          <li class="header-nav-li--tiered has-dropdown"><a id="publications-nav" href="https://www.dai.com/#publications{% if page.title == "Home" %}{{"_hash"}}{% endif %}" class="{% if page.url contains "publications" %}{{"active"}}{% endif %}">Publications</a>{% unless page.title == "Home" %}<ul class="dropdown">
+            {% for item in site.nav-main-publications %}
+              <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="https://www.dai.com{{ item.link }}">{{ item.text }}</a></li>
+            {% endfor %}
+          </ul>{% endunless %}</li>
+          <li class="has-dropdown"><a id="news-nav" href="https://www.dai.com/#news{% if page.title == "Home" %}{{"_hash"}}{% endif %}" class="{% if page.url contains "news" %}{{"active"}}{% endif %}">News</a>{% unless page.title == "Home" %}<ul class="dropdown">
+            {% for item in site.nav-main-news %}
+              <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="https://www.dai.com{{ item.link }}">{{ item.text }}</a></li>
+            {% endfor %}
+          </ul>{% endunless %}</li>
+          <li class="has-dropdown"><a id="working-with-dai-nav" href="https://www.dai.com/#working-with-dai{% if page.title == "Home" %}{{"_hash"}}{% endif %}" class="{% if page.url contains "working-dai" %}{{"active"}}{% endif %}">Careers</a>{% unless page.title == "Home" %}<ul class="dropdown">
+            {% for item in site.nav-main-working %}
+              <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="https://www.dai.com{{ item.link }}">{{ item.text }}</a></li>
+            {% endfor %}
+          </ul>{% endunless %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</header>

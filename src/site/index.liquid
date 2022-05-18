@@ -1,10 +1,40 @@
 ---
 layout: base.liquid
-description: A starting place for building websites with eleventy, tailwind, and alpine.
+description: DAI blogs landing page
+title: DAI Blogs
 ---
-
-<ul>
-  {%- for post in ghost.posts -%}
-  <li><a href="/articles/{{ post.slug }}/index.html">{{ post.title }}</a></li>
-  {%- endfor -%}
-</ul>
+<div class="base-container">
+  <!-- BLOGS HEADER -->
+  <div class="">
+    <div class="bg-daiBlue pb-6">
+      <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
+        <div class="max-w-xl pr-3">
+          <h2 class="text-4xl font-extra-bold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Our Blogs</h2>
+          <p class="mt-5 text-xl text-white">By freely sharing what we learn, we have built a reputation as thought leaders who translate ideas into action. <span class="italic font-bold">Developments</span> is DAI’s newsletter, offering feature articles, opinion pieces, and interviews on DAI projects and global development issues. <span class="italic font-bold">Developing Alternatives</span> is a forum for our professional staff and guest authors to share their ideas in depth and address issues of enduring interest.</p>
+        </div>
+        <div class="mt-16 w-full max-w-xs">
+          <div class="mt-1.5 relative">
+            <div>
+              <label for="search" class="block text-sm font-medium text-white">Search Posts</label>
+              <div class="mt-1 relative flex items-center">
+                <input type="text" name="search" id="search" class="shadow-sm focus:ring-daiPurple focus:border-daiPurple block w-full pr-12 sm:text-sm border-gray-300 rounded-md">
+                <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
+                  <kbd class="inline-flex items-center border border-gray-200 rounded px-2 text-sm font-sans font-medium text-gray-400"> ⌘K </kbd>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BLOG BUTTONS -->
+      <div class="container mx-auto text-center">
+        <span class="relative z-0 inline-flex shadow-sm rounded-md">
+          <button type="button" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-daiGreen text-sm font-medium text-white hover:brightness-95 focus:z-10 focus:outline-none focus:ring-1 focus:ring-daiPurple focus:border-daiPurple">DEVELOPMENTS</button>
+          <button type="button" class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-daiDark text-sm font-medium text-white hover:brightness-95 focus:z-10 focus:outline-none focus:ring-1 focus:ring-daiPurple focus:border-daiPurple">DEVELOPING ALTERNATIVES</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- END BLOGS HEADER -->
+    {% include 'featured-articles.liquid' %}
+    {% include 'recent-articles.liquid' %}

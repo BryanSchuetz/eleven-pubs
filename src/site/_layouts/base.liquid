@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>
-      {% block title %}Hello Eleventy{% endblock %}
-    </title>
-    <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="stylesheet" href="/assets/style.css?v={% version %}"/>
-    <script src="/assets/js/alpine.js?v={% version %}" defer></script>
-    <script src="/assets/js/turbo.js?v={% version %}"></script>
-    {% block head %}{% endblock %}
-  </head>
-  <body>
-    <h1 class="text-lg text-red-300">THIS IS THE MOTHERFUCKING BASE LAYOUT</h1>
-    {{content}}
-  </body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  {% include 'iehacks.liquid' %}
+  {% include 'head.liquid' %}
+  <body class="" >
+    <div class="wrapper">
+      {% include 'header.liquid' %}
+          {{ content }}
+      </div>
+      {% include'footer.liquid' %}
+    </div>
+  </body> 
+
 </html>

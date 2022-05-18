@@ -1,0 +1,72 @@
+title: "DAI Publications"
+baseurl: ""
+description: "By freely sharing what we learn, we have built a reputation as thought leaders who translate ideas into action and action into results."
+url: ""
+nav-util:
+  - text: FAQ
+    link: /faq
+  - text: SIGN UP
+    link: /sign-up
+  - text: CONTACT US
+    link: /contact-us
+  - text: PROJECT LOGIN
+    link: /project-login
+  - text: JOBS
+    link: /careers/working-at-dai
+nav-main:
+  - text: Who We Are
+    link: #who-we-are
+  - text: Our Work
+    link: #our-work
+  - text: Publications
+    link: #stories
+  - text: News
+    link: #news
+  - text: Careers
+    link: /careers/working-at-dai
+nav-main-who:
+  - text: Mission & Values
+    link: /who-we-are/mission-and-values
+  - text: History
+    link: /who-we-are/history
+  - text: Leadership
+    link: /who-we-are/leaders
+    children: /who-we-are/board
+  - text: Global Offices
+    link: /who-we-are/global
+  - text: Our Team
+    link: /who-we-are/the-team
+    children: team
+  - text: Ethics & Integrity
+    link: /who-we-are/ethics-integrity
+nav-main-working:
+  - text: Working at DAI
+    link: /careers/working-at-dai
+  - text: Benefits
+    link: /careers/benefits
+  - text: Career Areas
+    link: /careers/career-areas
+  - text: DAI People
+    link: /careers/dai-people
+  - text: Why DAI
+    link: /careers/why-dai
+nav-main-our:
+  - text: Solutions
+    link: /our-work/the-solutions
+    children: /our-work/solutions
+  - text: Regions
+    link: /our-work/the-regions
+    children: /our-work/regions
+  - text: Projects
+    link: /our-work/the-projects
+    children: /our-work/projects
+  - text: Our Clients
+    link: /our-work/our-clients
+  - text: Working with DAI
+    link: /our-work/working-with-us
+nav-main-news:
+  - text: View More News
+    link: /news/view-more-news
+nav-main-publications:
+  - text: View More Articles
+    link: /publications/view-more-articles
