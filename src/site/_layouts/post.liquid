@@ -1,6 +1,18 @@
 ---
 layout: base.liquid
 ---
-
-<h1>And this is the post layout</h1>
-{{ content }}
+<div class="base-container">
+  <div class="{% if tags contains 'hash-developments' %}bg-daiGreen{% elsif tags contains 'hash-devalts' %}bg-daiDark{% else %}bg-daiGreen{% endif %}">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl uppercase"><a href="/" class="text-white hover:brightness-95 hover:text-white">{% if tags contains 'hash-developments' %}Developments{% elsif tags contains 'hash-devalts' %}Developing Alternatives{% else %}Developments {% endif %}</a></h1>
+      </div>
+    </div>
+  </div>
+  {% unless image == blank %}
+    {% include 'updated-post.liquid' %}
+  {% else %}
+    {% include 'universal-post.liquid' %}
+  {% endunless %}
+  {% include 'related-articles.liquid' %}
+</div>

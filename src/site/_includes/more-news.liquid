@@ -1,0 +1,110 @@
+<!-- MORE NEWS -->
+<div class="bg-[#F7F7F7]">
+  <div class="max-w-7xl mx-auto py-16 sm:py-24">
+  <div class="back-box border-[16px] border-white h-[1600px] md:h-[1803px] xl:h-[1650px] w-[60%] z-0 absolute ml-10">
+      <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">More</span> <span class="font-normal">News</span></h2>
+      <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
+  </div>
+<!-- CARD GRID -->
+<div class="relative mt-52 sm:mt-40 px-1 md:px-4 lg:px-0 mb-11">
+  <div class="relative max-w-7xl mx-auto">
+    <div class="px-4 sm:px-6 lg:px-8">
+      <div class="bg-[#f7f7f7] relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-5xl">
+      <turbo-frame id="posts-{{pagination.pageNumber}}">
+        <div class="grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+          <!-- CARD LOOP -->
+          {% for post in more-posts limit:30 offset:9 %}
+          <div>
+            <div>
+              <a href="#" class="inline-block">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium {% if post.data.tags contains 'hash-developments' %}bg-daiGreen{% elsif post.data.tags contains 'hash-devalts' %}bg-daiDark{% else %}bg-daiGreen{% endif %} text-white">{% if post.data.tags contains 'hash-developments' %}Developments{% elsif post.data.tags contains 'hash-devalts' %}Developing Alternatives{% else %}Developments{% endif %}</span>
+              </a>
+            </div>
+            <a data-turbo="false" href="{{ post.url }}" class="block mt-4">
+              <p class="text-xl font-semibold text-gray-900">{{ post.data.title }}</p>
+            </a>
+            {% assign morePostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+            {% if morePostAuthors[1] %}
+            <div class="mt-6 flex items-center">
+              <div class="flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 user-group" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                  </svg>
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium mb-0 text-gray-900">
+                  {% for author in morePostAuthors %}
+                  {% assign moreAuthor-details = experts | where:"name", author %}
+                  <a class="hover:brightness-95 capitalize" href="{{moreAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}"> {{author}} </a>{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                </p>
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <time datetime="{{post.data.date}}">{{post.data.date | relativeDate}}</time>
+                  <span aria-hidden="true"> &middot; </span>
+                  <span> {{ post.templateContent | timeToRead }} read</span>
+                </div>
+              </div>
+            </div>
+          {% elsif morePostAuthors[0] %}
+          {% for author in morePostAuthors %}
+          {% assign moreAuthor-details = experts | where:"name", author %}
+            <div class="mt-6 flex items-center">
+              <div class="flex-shrink-0">
+                  {% if moreAuthor-details[0].image %}
+                  <img class="h-10 w-10 rounded-full" src="{{ moreAuthor-details[0].image }}" alt="">
+                  {% else %}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 user" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                  </svg>
+                  {% endif %}
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium mb-0 text-gray-900">
+                  <a href="{{ moreAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}"> {{author}} </a>
+                </p>
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <time datetime="{{post.data.date}}"> {{post.data.date | relativeDate}}</time>
+                  <span aria-hidden="true"> &middot; </span>
+                  <span> {{ post.templateContent | timeToRead }} read</span>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          {% else %}
+          <div class="mt-6 flex items-center">
+            <div class="flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 user" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3">
+              <div class="flex space-x-1 text-sm text-gray-500">
+                <time datetime="{{post.data.date}}"> {{post.data.date | relativeDate}} </time>
+                <span aria-hidden="true"> &middot; </span>
+                <span> {{ post.templateContent | timeToRead }} read</span>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% if pagination.nextPageHref %}
+          <turbo-frame id="posts-{{pagination.pageNumber | plus:1}}">
+            <div class="container max-w-lg mx-auto flex items-center">
+              <a class="block mx-auto my-8 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  text-white bg-daiDark hover:bg-daiDark hover:brightness-90 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 uppercase" target="posts-{{pagination.pageNumber | plus:1}}" href="{{pagination.nextPageHref | url}}">LOAD MORE POSTS</a>
+            </div>
+          </turbo-frame>
+        {% endif %}
+      </turbo-frame>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+</div>

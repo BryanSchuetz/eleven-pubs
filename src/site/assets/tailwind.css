@@ -5,3 +5,47 @@
 .base-container{
   margin-top: 130px;
 }
+.prose a{
+  color: #1e7ab3;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.prose a:hover{
+  text-decoration: none;
+  @apply brightness-75
+}
+.prose figcaption{
+  font-size: .8rem;
+  @apply p-4 bg-daiLightGray mt-0 text-center
+}
+.prose figure img{
+  @apply w-full
+}
+.prose .kg-width-full{
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.prose blockquote{
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @apply p-16 bg-daiLightGray
+}
+.prose blockquote:after{
+  content: "";
+  position: absolute;
+  background-image: url(/assets/images/quote.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 20px;
+  left: 20px;
+  @apply h-6 w-6 md:h-8 md:w-8 lg:w-10 lg:h-10
+}

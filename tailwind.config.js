@@ -13,7 +13,7 @@ module.exports = {
         daiLightGray: "#e4e5e6",
         daiPurple: "#644C85",
         daiLinks: "#1e7ab3"
-      }
+      },
     }
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

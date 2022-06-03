@@ -3,6 +3,10 @@ const now = String(Date.now());
 const htmlmin = require("html-minifier");
 const yaml = require("js-yaml");
 const toml = require("toml");
+const getSimilarCategories = function(categoriesA, categoriesB) {
+  return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
+}
+
 
 /* Debugging Filter */
 const dumpFilter = require("@jamshop/eleventy-filter-dump");
@@ -14,6 +18,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(timeToRead, {
     style: 'short'
   });
+
   
   //**Watch Targets**
 
@@ -50,6 +55,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("base", "_layouts/base.liquid");
 
   //**Filters**
+
+  //Related Posts filter
+  eleventyConfig.addLiquidFilter("similarPosts", function(collection, path, tags){
+    return collection.filter((post) => {
+      return getSimilarCategories(post.data.tags, tags) >= 1 && post.data.page.inputPath !== path;
+    }).sort((a,b) => {
+      return getSimilarCategories(b.data.tags, tags) - getSimilarCategories(a.data.tags, tags);
+    });
+  });
+
   //Array items include string
   eleventyConfig.addFilter("pluck", function (arr, value) {
     return arr.filter((item) => item.includes(value));
@@ -76,7 +91,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("relativeDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc",
-    }).toRelative({unit: "days"});
+    }).toRelative({});
   });
 
   //**Shortcodes**
@@ -88,7 +103,9 @@ module.exports = function (eleventyConfig) {
 
   //**Custom Collections **/
    eleventyConfig.addCollection("featuredPosts", function(collectionApi) {
-    return collectionApi.getFilteredByTag("hash-featured");
+    return collectionApi.getFilteredByTag("hash-featured").sort(function(a,b){
+      return b.date - a.date
+    });
   });
   eleventyConfig.addCollection("justPosts", function(collectionApi) {
     return collectionApi.getFilteredByTag("hash-post").sort(function(a,b){

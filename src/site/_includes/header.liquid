@@ -34,7 +34,7 @@
               <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="https://www.dai.com{{ item.link }}">{{ item.text }}</a></li>
             {% endfor %}
           </ul>{% endunless %}</li>
-          <li class="header-nav-li--tiered has-dropdown"><a id="publications-nav" href="https://www.dai.com/#publications{% if page.title == "Home" %}{{"_hash"}}{% endif %}" class="{% if page.url contains "publications" %}{{"active"}}{% endif %}">Publications</a>{% unless page.title == "Home" %}<ul class="dropdown">
+          <li class="header-nav-li--tiered has-dropdown"><a id="publications-nav" href="https://www.dai.com/#publications{% if page.title == "Home" %}{{"_hash"}}{% endif %}" class="active{% if page.url contains "publications" %}{{"active"}}{% endif %}">Publications</a>{% unless page.title == "Home" %}<ul class="dropdown">
             {% for item in site.nav-main-publications %}
               <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="https://www.dai.com{{ item.link }}">{{ item.text }}</a></li>
             {% endfor %}

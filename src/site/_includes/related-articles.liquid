@@ -1,0 +1,84 @@
+<div class="bg-daiLightGray">
+  <div class="max-w-7xl mx-auto py-16 sm:py-24">
+  <div class="back-box border-[16px] border-white h-[1500px] md:h-[1600px] lg:h-[920px] w-[60%] z-0 absolute ml-10">
+      <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">Related</span> <span class="font-normal">Articles</span></h2>
+      <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
+  </div>
+<!-- BLOG SECTIONS -->
+<div class="relative mt-52 sm:mt-40 px-1 md:px-4 lg:px-0 mb-11">
+  <div class="relative max-w-7xl mx-auto">
+    <div class="mt-12 max-w-2xl mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none bg-daiLightGray">
+      <!-- RELATED ARTICLE LOOP -->
+      {% assign similar = collections.featuredPosts | similarPosts: page.inputPath, tags %}
+      {% for post in similar limit:3 %}
+        {% assign relatedPostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex-shrink-0">
+          <img class="h-48 w-full object-cover" src="{{ post.data.image | default:default-feature }}" alt="">
+        </div>
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div class="flex-1">
+            <p class="text-sm font-medium text-indigo-600 mb-0">
+              <a href="#" class="hover:text-daiLinks hover:brightness-95 uppercase text-daiLinks font-bold">{% if post.data.tags contains 'hash-developments' %}Developments{% elsif post.data.tags contains 'hash-devalts' %}Developing Alternatives{% else %}DAIdeas{% endif %} </a>
+            </p>
+            <a href="{{ post.url }}" class="block mt-2">
+              <p class="text-xl font-semibold text-gray-900">{{post.data.title}}</p>
+              <hr class="daiBar border-y-4 w-12 border-daiDark">
+              <p class="mt-3 text-base text-gray-500">{{post.data.excerpt}}</p>
+            </a>
+          </div>
+          <div class="author-block mt-6 flex items-center">
+            <!-- MULTIPLE AUTHOR BLOCK @TODO: again, we should probably abstract the author blocks into a single component that accepts any number of authors-->
+            {% if relatedPostAuthors[1] %}
+            <div class="flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 user-group" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+              </svg>
+              </div>
+            <div class="ml-3">
+              <p class="text-sm font-bold text-gray-900 mb-0">
+                {% for author in relatedPostAuthors %}
+                {% assign relatedAuthor-details = experts | where:"name", author %}
+                  <a href="{{ relatedAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="hover:text-daiLinks hover:brightness-95 text-daiLinks capitalize"> {{relatedAuthor-details[0].name | default:author }}</a>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </p>
+              <div class="flex space-x-1 text-sm text-gray-500">
+                <time datetime="{{post.data.date}}">{{post.data.date | relativeDate}}</time>
+                <span aria-hidden="true"> | </span>
+                <span>{{ post.templateContent | timeToRead }} read </span>
+              </div>
+            </div>
+            {% else %}
+            <!-- SINGLE AUTHOR BLOCK -->
+            <div class="flex-shrink-0">
+              {% for author in relatedPostAuthors %}
+              {% assign relatedAuthor-details = experts | where:"name", author %}
+                {% if relatedAuthor-details[0].image %}
+                  <img class="h-9 w-9 rounded-full" src="{{ relatedAuthor-details[0].image }}" alt="{{ author-details.name }}">  
+                {% else %}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 user" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                  </svg>
+                {% endif %}
+              </div>
+            <div class="ml-3">
+              <p class="text-sm font-bold text-gray-900 mb-0">
+              <a href="{{ relatedAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="hover:text-daiLinks hover:brightness-95 text-daiLinks capitalize"> {{relatedAuthor-details[0].name | default:author }}</a>
+              {% endfor %}
+              </p>
+              <div class="flex space-x-1 text-sm text-gray-500">
+                <time datetime="{{post.data.date}}">{{post.data.date | relativeDate}}</time>
+                <span aria-hidden="true"> | </span>
+                <span>{{ post.templateContent | timeToRead }} read </span>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+  </div>
+</div>

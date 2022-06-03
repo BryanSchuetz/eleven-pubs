@@ -1,7 +1,7 @@
 <!-- RECENT ARTICLES -->
 <div class="bg-daiLightGray">
   <div class="max-w-7xl mx-auto py-16 sm:py-24">
-  <div class="back-box border-[16px] border-white h-[1200px] w-[60%] z-0 absolute ml-10">
+  <div class="back-box border-[16px] border-white h-[1600px] md:h-[1803px] xl:h-[1650px] w-[60%] z-0 absolute ml-10">
       <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">Recent</span> <span class="font-normal">Articles</span></h2>
       <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
   </div>
@@ -11,9 +11,8 @@
     <div class="mt-12 max-w-2xl mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none bg-daiLightGray">
       <!-- RECENT ARTICLE LOOP -->
       {% assign counter = 0 %}
-      {% for post in collections.justPosts %}
+      {% for post in collections.justPosts offset:3 %}
         <!-- GHETTO LIMIT @TODO: should make this limit part of the collection call in eleventy config.-->
-        {% unless post.data.tags contains 'hash-featured' %}
         {% assign counter = counter | plus: 1%}
         {% if counter == 7 %}
           {% break %}
@@ -26,12 +25,12 @@
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
             <p class="text-sm font-medium text-indigo-600 mb-0">
-              <a href="#" class="hover:brightness-95 uppercase text-daiLinks font-bold">{% if post.data.tags contains 'hash-developments' %}Developments{% elsif post.data.tags contains 'hash-devalts' %}Developing Alternatives{% else %}DAIdeas{% endif %} </a>
+              <a href="#" class="hover:text-daiLinks hover:brightness-95 uppercase text-daiLinks font-bold">{% if post.data.tags contains 'hash-developments' %}Developments{% elsif post.data.tags contains 'hash-devalts' %}Developing Alternatives{% else %}Developments{% endif %} </a>
             </p>
-            <a href="#" class="block mt-2">
+            <a href="{{ post.url }}" class="block mt-2">
               <p class="text-xl font-semibold text-gray-900">{{post.data.title}}</p>
               <hr class="daiBar border-y-4 w-12 border-daiDark">
-              <p class="mt-3 text-base text-gray-500">{{post.excerpt}}</p>
+              <p class="mt-3 text-base text-gray-500">{{post.data.excerpt}}</p>
             </a>
           </div>
           <div class="author-block mt-6 flex items-center">
@@ -46,7 +45,7 @@
               <p class="text-sm font-bold text-gray-900 mb-0">
                 {% for author in recentPostAuthors %}
                 {% assign recentAuthor-details = experts | where:"name", author %}
-                  <a href="{{ recentAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="hover:brightness-95 text-daiLinks capitalize"> {{recentAuthor-details[0].name | default:author }}</a>{% unless forloop.last %}, {% endunless %}
+                  <a href="{{ recentAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="hover:text-daiLinks hover:brightness-95 text-daiLinks capitalize"> {{recentAuthor-details[0].name | default:author }}</a>{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
@@ -70,7 +69,7 @@
               </div>
             <div class="ml-3">
               <p class="text-sm font-bold text-gray-900 mb-0">
-              <a href="{{ recentAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="hover:brightness-95 text-daiLinks capitalize"> {{recentAuthor-details[0].name | default:author }}</a>
+              <a href="{{ recentAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="hover:text-daiLinks hover:brightness-95 text-daiLinks capitalize"> {{recentAuthor-details[0].name | default:author }}</a>
               {% endfor %}
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
@@ -83,7 +82,6 @@
           </div>
         </div>
       </div>
-        {% endunless %}
       {% endfor %}
     </div>
   </div>

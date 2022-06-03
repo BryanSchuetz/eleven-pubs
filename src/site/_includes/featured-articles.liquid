@@ -1,6 +1,6 @@
 
 <!-- POST ONE -->
-{% assign postOne = collections.featuredPosts | reverse | first  %}
+{% assign postOne = collections.featuredPosts | first  %}
 <!-- SET AUTHORS We're doing a couple of odd things here (driven by Ghost constraints forcing us to pass a lot of our structured data as tags).-->
 <!-- Return subset of tags array with only hash-by tags, cast as a string, format the names properly, then move back to an array-->
 {% assign postOneAuthors = postOne.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
@@ -48,7 +48,7 @@
                         {{ tag }}{% unless forloop.last %}, {% endunless %}
                       {% endfor %}
                     </span></p>
-                    <p class="text-xs font-medium text-gray-500 mb-0">{{postOne.data.date | readableDate}} | {{ postOne.templateContent | timeToRead }} read</p>
+                    <p class="text-xs font-medium text-gray-500 mb-0">{{postOne.data.date | relativeDate}} | {{ postOne.templateContent | timeToRead }} read</p>
                   </div>
                 </div>
               </div>  
@@ -74,7 +74,7 @@
                         {{ tag }}{% unless forloop.last %}, {% endunless %}
                       {% endfor %}
                     </span></p>
-                    <p class="text-xs font-medium text-gray-500 mb-0">{{postOne.data.date | readableDate}} | {{ postOne.templateContent | timeToRead }} read</p>
+                    <p class="text-xs font-medium text-gray-500 mb-0">{{postOne.data.date | relativeDate}}| {{ postOne.templateContent | timeToRead }} read</p>
                   </div>
                 </div>
               </div>    
@@ -94,7 +94,7 @@
         </div>
         <div class="z-10">
           {% assign default-feature = '/assets/images/default-feature.png' %}
-          <div class="container bg-cover bg-center h-full" style="background: url('{{ postOne.data.image | default:default-feature}}');">
+          <div class="container h-full" style="background: url('{{ postOne.data.image | default:default-feature}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
           </div>
         </div>
       </div>
