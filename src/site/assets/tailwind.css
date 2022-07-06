@@ -4,6 +4,10 @@
 
 .base-container{
   margin-top: 130px;
+  color: #404d59;
+}
+.post-body{
+  color: #404d59;
 }
 .prose a{
   color: #1e7ab3;
@@ -48,4 +52,28 @@
   top: 20px;
   left: 20px;
   @apply h-6 w-6 md:h-8 md:w-8 lg:w-10 lg:h-10
+}
+/* Ripple effect */
+.daiButtons {
+  background-position: center;
+  transition: background 0.4s, box-shadow 0.2s;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e7ab3;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+  margin-right: 1rem;
+}
+.daiButtons:hover, .daiButtons:focus {
+  background: #644C85 radial-gradient(circle, transparent 1%, #644C85 1%) center/15000%;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0,0,0,.12);
+}
+.daiButtons:active, .daiButtons:focus {
+  background-color: #EFECE8;
+  background-size: 100%;
+  transition: background 0s;
 }

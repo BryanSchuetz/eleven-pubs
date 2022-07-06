@@ -4,7 +4,7 @@
       <h2 class="mt-2 block text-3xl text-left leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">{{title}}</h2>
       <hr class="daiBar border-y-4 w-14 border-daiDark">
     </div>
-    <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+    <div class="mt-6 prose prose-indigo prose-lg updated-posts post-body mx-auto">
       {{content | replace:"<code>", "<p style='margin-top: 0;'>" | replace:"</code>", "</p>" | replace:"https://pubs.ghost.io/uploads/", "https://dai-assets.s3.amazonaws.com/blogs/"}}
     </div>
   </div>

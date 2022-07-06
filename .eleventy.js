@@ -42,6 +42,9 @@ module.exports = function (eleventyConfig) {
     "./node_modules/@hotwired/turbo/dist/turbo.es2017-umd.js":
       "./assets/js/turbo.js",
   });
+  eleventyConfig.addPassthroughCopy({
+    "./src/site/assets/js/site.js": "./assets/js/site.js",
+  });
   //Images
   eleventyConfig.addPassthroughCopy("./src/site/assets/images");
 
