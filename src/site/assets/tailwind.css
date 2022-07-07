@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 .base-container{
-  margin-top: 130px;
   color: #404d59;
+}
+.blogs-header{
+  background-image: url(/assets/images/large-wallpaper-white.jpg);
+  background-position: center;
+}
+.devs-banner, .digital-banner{
+  background-image: url('/assets/images/developments-banner.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.digital-banner{
+  background-image: url('/assets/images/digital-banner.jpg');
+  background-position: left;
+  background-size: cover;
 }
 .post-body{
   color: #404d59;
