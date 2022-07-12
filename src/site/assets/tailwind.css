@@ -72,7 +72,7 @@
   background-position: center;
   transition: background 0.4s, box-shadow 0.2s;
   border: none;
-  border-radius: 7px;
+  border-radius: 4px;
   padding: 12px 18px;
   font-size: 16px;
   cursor: pointer;
@@ -82,12 +82,145 @@
   outline: none;
   margin-right: 1rem;
 }
-.daiButtons:hover, .daiButtons:focus {
+.daiButtons:hover{
   background: #644C85 radial-gradient(circle, transparent 1%, #644C85 1%) center/15000%;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0,0,0,.12);
 }
-.daiButtons:active, .daiButtons:focus {
-  background-color: #EFECE8;
-  background-size: 100%;
-  transition: background 0s;
+
+/* SEARCH BOX */
+.aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #e4e4e4; }
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid rgba(228, 228, 228, 0.6);
+  min-width: 300px;
+  margin-top: 10px;
+  box-sizing: border-box; 
+  -moz-box-shadow:    0px 0px 5px 1px rgba(#d3e3f0, 0.35);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(#d3e3f0, 0.35);
+  box-shadow:         0px 0px 5px 1px rgba(#d3e3f0, 0.35);
 }
+.blog-search span.algolia-autocomplete{
+  display: block !important;
+}
+.aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
+  display: none; 
+}
+.aa-dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.6); ;
+  border: 1px solid rgba(228, 228, 228, 0.6); 
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box; 
+  -moz-box-shadow:    0px 0px 5px 1px rgba(black, 0.35);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(black, 0.35);
+  box-shadow:         0px 0px 5px 1px rgba(black, 0.35);
+}
+.aa-suggestion{
+  padding: 6px 4px;
+  border-bottom: 1px dashed #e4e5e6;
+  border-radius: 4px;
+}
+.aa-suggestion.aa-cursor{
+  background-color: rgba(30, 122, 179, .1);
+}
+.aa-suggestion+.aa-cursor{
+  background-color: rgba(30, 122, 179, .1);
+}
+.ais-Highlight{
+  font-weight: bold;
+}
+/* // SEARCH ALGOLIA
+.aa-input-container, input.aa-input-search{
+  width:92%;
+  @include responsive(tinyish-screens){
+    width: 93%;
+  }
+  @include responsive(small-screens){
+    width: 95%;
+  }
+  @include responsive(wide-screens){
+    width: 92%;
+  }
+}
+.aa-dropdown-menu{
+  width: 92%;
+  @include responsive(tinyish-screens){
+    width: 93%;
+  }
+  @include responsive(small-screens){
+    width: 95%;
+  }
+  @include responsive(wide-screens){
+    width: 110%;
+  }
+}
+.aa-input-container {
+  display: block;
+  position: relative; 
+}
+span.algolia-autocomplete{
+  display: block !important;
+}
+.aa-input-search {
+  // width: 300px;
+  border: 1px solid rgba(228, 228, 228, 0.6);
+  padding: 9px 28px 9px 12px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+}
+  .aa-input-search::-webkit-search-decoration, .aa-input-search::-webkit-search-cancel-button, .aa-input-search::-webkit-search-results-button, .aa-input-search::-webkit-search-results-decoration {
+    display: none; 
+  }
+  .aa-input-search{
+    outline: none;
+  }
+.aa-input-icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #e4e4e4; }
+.aa-dropdown-menu {
+  background-color: #fff;
+  border: 1px solid rgba(228, 228, 228, 0.6);
+  // min-width: 300px;
+  margin-top: 10px;
+  box-sizing: border-box; 
+  -moz-box-shadow:    0px 0px 5px 1px rgba($blue, 0.35);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba($blue, 0.35);
+  box-shadow:         0px 0px 5px 1px rgba($blue, 0.35);
+}
+.aa-suggestion {
+  padding: 12px;
+  cursor: pointer;
+}
+.aa-suggestion + .aa-suggestion {
+    border-top: 3px solid rgba(228, 228, 228, 0.6);
+}
+.aa-suggestion:hover, .aa-suggestion.aa-cursor {
+    background-color: rgba(241, 241, 241, 0.35); }
+.algolia__result-highlight{
+  font-weight: bold;
+}
+.aa-suggestion.aa-cursor{
+  background-color: rgba($blue, 0.1);
+}
+.aa-suggestion+.aa-cursor{
+  background-color: rgba($blue, 0.1);
+  border-top: 3px solid $blue;
+}
+ */

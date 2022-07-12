@@ -29,3 +29,4 @@
   postsDir = "./src/site/articles/"
   assetsDir = "./src/site/assets/images/"
   cacheFile = "./ghostMarkdownCache.json"
+  postDatePrefix = false

@@ -18,7 +18,7 @@
           {% break %}
         {% endif %}
         {% assign recentPostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
-        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex flex-col rounded shadow-lg overflow-hidden">
         <div class="flex-shrink-0">
           <a href="{{post.url}}"><img class="h-48 w-full object-cover" src="{{ post.data.image | default:default-feature }}" alt=""></a>
         </div>

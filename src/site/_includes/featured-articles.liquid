@@ -136,7 +136,8 @@
           </div>
         </div>  
         {% else %}
-        <!-- SINGLE AUTHOR DETAILS Grab single author details from experts.yml (aggregated from dai.com)-->
+        this here: {{ postAuthors }}
+        <!-- SINGLE AUTHOR DETAILS Grab single author details from experts.yml (aggregated from dai.com) effff-->
         {% for author in postAuthors %}
         {% assign author-details = experts | where:"name", author %}
         <div class="flex-shrink-0 group block">
