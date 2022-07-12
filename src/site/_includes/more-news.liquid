@@ -88,7 +88,7 @@
         {% if pagination.nextPageHref %}
           <turbo-frame id="posts-{{pagination.pageNumber | plus:1}}">
             <div class="container max-w-lg mx-auto flex items-center">
-              <a class="block mx-auto my-8 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  text-white bg-daiDark hover:bg-daiDark hover:brightness-90 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 uppercase" target="posts-{{pagination.pageNumber | plus:1}}" href="{{pagination.nextPageHref | url}}">LOAD MORE POSTS</a>
+              <a class="block mx-auto my-8 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  text-white bg-daiDark hover:bg-daiDark hover:brightness-90 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 uppercase" target="posts-{{pagination.pageNumber | plus:1}}" href="{{pagination.nextPageHref | url}}">Load More Posts</a>
             </div>
           </turbo-frame>
         {% endif %}
