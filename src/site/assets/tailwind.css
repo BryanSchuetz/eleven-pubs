@@ -30,7 +30,6 @@
 }
 .prose a:hover{
   text-decoration: none;
-  @apply brightness-75
 }
 .prose figcaption{
   font-size: .8rem;
@@ -55,17 +54,26 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  @apply p-16 bg-daiLightGray
+  color: white;
+  background-image: url(/assets/images/quote-background.jpg);
+  background-size: cover;
+  @apply p-16
+}
+.prose blockquote em{
+  display: block;
+  font-style: normal;
+  padding-left: 10%;
 }
 .prose blockquote:after{
   content: "";
   position: absolute;
-  background-image: url(/assets/images/quote.svg);
+  background-image: url(/assets/images/new-quote.svg);
   background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
-  top: 20px;
-  left: 20px;
-  @apply h-6 w-6 md:h-8 md:w-8 lg:w-10 lg:h-10
+  top: 35%;
+  left: 5%;
+  @apply h-12 w-12 md:h-14 md:w-14 lg:w-16 lg:h-16
 }
 /* Ripple effect */
 .daiButtons {
@@ -137,6 +145,7 @@
 }
 .ais-Highlight{
   font-weight: bold;
+  font-style: normal;
 }
 /* // SEARCH ALGOLIA
 .aa-input-container, input.aa-input-search{
@@ -224,3 +233,77 @@ span.algolia-autocomplete{
   border-top: 3px solid $blue;
 }
  */
+
+/* IMAGE GALLERY */
+
+.kg-gallery-container{
+  @apply grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8
+}
+.kg-gallery-image{
+  @apply block w-full aspect-video rounded overflow-hidden mb-8 sm:mb-6 xl:mb-8 bg-daiLightGray
+}
+div.kg-gallery-image img{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.kg-bookmark-card{
+  @apply p-4 border-[1px] border-daiLightGray
+}
+.kg-bookmark-card .kg-bookmark-container{
+  text-decoration: none;
+  @apply grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8
+}
+.kg-bookmark-container .kg-bookmark-content .kg-bookmark-title{
+  @apply font-bold mb-2
+}
+.kg-bookmark-metadata img.kg-bookmark-icon{
+  @apply w-4 h-4 mt-2 mb-0
+}
+.kg-bookmark-container .kg-bookmark-content{
+  @apply text-daiDark font-normal text-base
+}
+.kg-button-card a{
+  text-decoration: none;
+
+  @apply daiButtons
+}
+.kg-button-card a:hover{
+  color: white;
+}
+.kg-file-card .kg-file-card-container{
+  @apply flex p-4 border-[1px] border-daiLightGray no-underline
+}
+.kg-file-card-container .kg-file-card-icon{
+  margin-left: auto;
+  @apply self-center
+}
+.kg-file-card-container .kg-file-card-icon svg{
+  @apply h-16 w-16
+}
+.kg-file-card-container .kg-file-card-contents svg{
+  @apply flex-grow
+}
+.kg-file-card-container .kg-file-card-title{
+  @apply text-lg font-bold
+}
+.kg-file-card-container .kg-file-card-caption{
+  @apply mt-1 text-base text-daiDark font-normal
+}
+.kg-file-card-container .kg-file-card-metadata{
+  @apply text-sm mt-1 text-daiDark 
+}
+.kg-card.kg-callout-card.kg-callout-card-grey{
+  @apply p-8 bg-daiLightGray text-daiDark text-base
+}
+/* BOOKMARK */
+/* <div class="flex">
+  <div class="mr-4 flex-shrink-0 self-center">
+    <svg class="h-16 w-16 border border-gray-300 bg-white text-gray-300" preserveAspectRatio="none" stroke="currentColor" fill="none" viewBox="0 0 200 200" aria-hidden="true">
+      <path vector-effect="non-scaling-stroke" stroke-width="1" d="M0 0l200 200M0 200L200 0" />
+    </svg>
+  </div>
+  <div>
+    <h4 class="text-lg font-bold">Lorem ipsum</h4>
+    <p class="mt-1">Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.</p>
+  </div>
+</div> */
