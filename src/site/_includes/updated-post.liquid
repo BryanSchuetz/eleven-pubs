@@ -22,7 +22,7 @@
                   <div>
                     <h4 class="capitalize text-lg font-bold">
                     {% for author in postAuthors %}
-                      {% assign postAuthor-details = experts | where:"name", author %}<a href="{{postAuthor-details[0].link | default:"https://www.dai.com/who-we-are/our-team"}}">{{author}}</a>{% unless forloop.last %}, {% endunless %}
+                      {% assign postAuthor-details = experts | where:"name", author %}<a href="{{postAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}">{{author}}</a>{% unless forloop.last %}, {% endunless %}
                     {% endfor %}
                   </h4>
                   <p class="mt-1 mb-0 mt-0">{{date | relativeDate}} | {{ content | timeToRead }} read</p>

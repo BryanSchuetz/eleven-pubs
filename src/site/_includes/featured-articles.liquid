@@ -100,7 +100,7 @@
 <!-- POST OTHERS -->
 <div class="bg-daiLightGray">
   <div class="grid grid-cols-2 gap-6 content-end max-w-5xl mx-auto bg-daiLightGray">
-    {% assign postOthers = collections.featuredPosts |reverse %}
+    {% assign postOthers = collections.featuredPosts %}
     {% for post in postOthers limit:2 offset:1 %}
       {% assign postAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
     <div class="bg-white z-10">

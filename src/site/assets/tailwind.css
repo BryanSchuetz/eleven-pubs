@@ -122,7 +122,7 @@
   display: none; 
 }
 .aa-dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.6); ;
+  background-color: rgba(255, 255, 255, 0.9); ;
   border: 1px solid rgba(228, 228, 228, 0.6); 
   border-radius: 4px;
   padding: 10px;
@@ -146,6 +146,11 @@
 .ais-Highlight{
   font-weight: bold;
   font-style: normal;
+}
+.aa-suggestion .publication{
+  clear: left;
+  width: auto;
+  @apply rounded-full bg-daiBlue p-1 mt-2 text-xs block pl-4
 }
 /* // SEARCH ALGOLIA
 .aa-input-container, input.aa-input-search{
@@ -244,7 +249,7 @@ span.algolia-autocomplete{
 }
 div.kg-gallery-image img{
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 0px; 
 }
 .kg-bookmark-card{
   @apply p-4 border-[1px] border-daiLightGray
@@ -252,6 +257,10 @@ div.kg-gallery-image img{
 .kg-bookmark-card .kg-bookmark-container{
   text-decoration: none;
   @apply grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8
+}
+.kg-bookmark-card .kg-bookmark-thumbnail img{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .kg-bookmark-container .kg-bookmark-content .kg-bookmark-title{
   @apply font-bold mb-2
@@ -307,3 +316,4 @@ div.kg-gallery-image img{
     <p class="mt-1">Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam expedita quia omnis voluptatem. Minus quidem ipsam quia iusto.</p>
   </div>
 </div> */
+
