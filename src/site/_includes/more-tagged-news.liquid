@@ -2,7 +2,7 @@
 <div class="bg-[#F7F7F7]">
   <div class="max-w-7xl mx-auto py-16 sm:py-24">
   <div class="back-box border-[16px] border-white h-[1600px] md:h-[1803px] xl:h-[1650px] w-[60%] z-0 absolute ml-10">
-      <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">More</span> <span class="font-normal">News</span></h2>
+      <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">{{tag}}</span> <span class="font-normal"> Posts</span></h2>
       <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
   </div>
 <!-- CARD GRID -->
@@ -10,10 +10,10 @@
   <div class="relative max-w-7xl mx-auto">
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="bg-[#f7f7f7] relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-5xl">
-      <turbo-frame id="posts-{{pagination.pageNumber}}">
         <div class="grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
           <!-- CARD LOOP -->
-          {% for post in taglist limit:30  %}
+          {% assign sortedTagedPosts = taglist | reverse %}
+          {% for post in sortedTagedPosts %}
           <div>
             <div>
               <a href="#" class="inline-block">
@@ -23,7 +23,9 @@
             <a data-turbo="false" href="{{ post.url }}" class="block mt-4">
               <p class="text-xl font-semibold text-gray-900">{{ post.data.title }}</p>
             </a>
-            {% assign morePostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+            {% if post.data.tags contains "hash-by" %}
+              {% assign morePostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:"," %}
+            {% endif %}
             {% if morePostAuthors[1] %}
             <!-- MULTIPLE POST AUTHORS -->
             <div class="mt-6 flex items-center">
@@ -53,7 +55,7 @@
                   {% if moreAuthor-details[0].image %}
                   <img class="h-9 w-9 rounded-full" src="{{ moreAuthor-details[0].image }}" alt="">
                   {% else %}
-                  <img src="/assets/images/author.svg" class="w-9 h-9" alt="">
+                    <img src="/assets/images/author.svg" class="w-9 h-9" alt="">
                   {% endif %}
               </div>
               <div class="ml-3">
@@ -71,9 +73,8 @@
           {% else %}
           <div class="mt-6 flex items-center">
             <div class="flex-shrink-0">
-              <img src="/assets/images/author.svg" class="w-9 h-9" alt="">
             </div>
-            <div class="ml-3">
+            <div class="">
               <div class="flex space-x-1 text-sm text-gray-500">
                 <time datetime="{{post.data.date}}"> {{post.data.date | relativeDate}} </time>
                 <span aria-hidden="true"> &middot; </span>
@@ -85,14 +86,6 @@
           </div>
           {% endfor %}
         </div>
-        {% if pagination.nextPageHref %}
-          <turbo-frame id="posts-{{pagination.pageNumber | plus:1}}">
-            <div class="container max-w-lg mx-auto flex items-center">
-              <a class="block mx-auto my-8 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm  text-white bg-daiDark hover:bg-daiDark hover:brightness-90 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 uppercase" target="posts-{{pagination.pageNumber | plus:1}}" href="{{pagination.nextPageHref | url}}">Load More Posts</a>
-            </div>
-          </turbo-frame>
-        {% endif %}
-      </turbo-frame>
       </div>
     </div>
   </div>

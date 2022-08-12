@@ -34,7 +34,6 @@ permalink: /tags/{{ tag | slugify }}/
     </div>
   </div>
   <!-- END BLOGS HEADER -->
-  <h1>Tagged “{{ tag }}”</h1>
   {% assign taglist = collections[ tag ] | sort:"title" %}
   {% include 'more-tagged-news.liquid' %}
 </div>
