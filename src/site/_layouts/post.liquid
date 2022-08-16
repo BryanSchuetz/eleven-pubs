@@ -1,13 +1,20 @@
 ---
 layout: base.liquid
 ---
-<div class="base-container mt-[92px] {% if tags contains 'hash-developments' %}devs-banner{% elsif tags contains 'hash-digital' %}digital-banner{% else %}devs-banner{% endif %}">
-    <div class="max-w-7xl mx-auto py-16 px-4 md:py-24 sm:px-6 lg:px-8">
-      <div class="text-right">
-        <h1 class="mt-1 text-4xl font-bold text-white md:text-5xl sm:tracking-tight lg:text-6xl uppercase"><a href="/" class="text-daiDark hover:text-daiDark">{% if tags contains 'hash-developments' %}Developments @ DAI{% elsif tags contains 'hash-digital' %}Digital @ DAI{% else %}Developments @ DAI {% endif %}</a></h1>
-      </div>
+<!-- <div class="base-container mt-[92px] columns-2">
+  <div class="{% if tags contains 'hash-developments' %}devs-banner{% elsif tags contains 'hash-digital' %}digital-banner{% else %}devs-banner{% endif %} w-[40%] h-[100%]"></div>
+  <div class="max-w-7xl mx-auto py-16 px-4 md:py-24 sm:px-6 lg:px-8">
+    <div class="text-right">
+      <h1 class="mt-1 text-4xl font-bold text-white md:text-5xl sm:tracking-tight lg:text-6xl uppercase"><a href="/" class="text-daiDark hover:text-daiDark">{% if tags contains 'hash-developments' %}Developments @ DAI{% elsif tags contains 'hash-digital' %}Digital @ DAI{% else %}Developments @ DAI {% endif %}</a></h1>
     </div>
   </div>
+  </div> -->
+  <div class="grid grid-cols-4 gap-2 mt-36">
+    <div class="grid-span-1 h-52 {% if tags contains 'hash-developments' %}devs-banner{% elsif tags contains 'hash-digital' %}digital-banner{% else %}devs-banner{% endif %}"></div>
+    <div class="grid-span-3 h-52">Developments Blog</div>
+  </div>
+  
+  
   {% unless image == blank %}
     {% include 'updated-post.liquid' %}
   {% else %}

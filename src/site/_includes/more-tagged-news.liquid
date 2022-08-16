@@ -1,12 +1,10 @@
 <!-- MORE NEWS -->
 <div class="bg-[#F7F7F7]">
   <div class="max-w-7xl mx-auto py-16 sm:py-24">
-  <div class="back-box border-[16px] border-white h-[1600px] md:h-[1803px] xl:h-[1650px] w-[60%] z-0 absolute ml-10">
       <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">{{tag}}</span> <span class="font-normal"> Posts</span></h2>
       <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
-  </div>
 <!-- CARD GRID -->
-<div class="relative mt-52 sm:mt-40 px-1 md:px-4 lg:px-0 mb-11">
+<div class="relative mt-6 sm:mt-3 px-1 md:px-4 lg:px-0 mb-11">
   <div class="relative max-w-7xl mx-auto">
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="bg-[#f7f7f7] relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-5xl">
@@ -23,8 +21,11 @@
             <a data-turbo="false" href="{{ post.url }}" class="block mt-4">
               <p class="text-xl font-semibold text-gray-900">{{ post.data.title }}</p>
             </a>
-            {% if post.data.tags contains "hash-by" %}
+            {% assign tagz = post.data.tags | join:"," %}
+            {% if tagz contains "hash-by" %}
               {% assign morePostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:"," %}
+              {% else %}
+              {% assign morePostAuthors = '' %}
             {% endif %}
             {% if morePostAuthors[1] %}
             <!-- MULTIPLE POST AUTHORS -->

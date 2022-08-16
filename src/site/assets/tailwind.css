@@ -10,14 +10,14 @@
   background-position: center;
 }
 .devs-banner, .digital-banner{
-  background-image: url('/assets/images/developments-banner.jpg');
-  background-position: left;
+  background-image: url('/assets/images/devs-banner-short.png');
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .digital-banner{
   background-image: url('/assets/images/digital-banner.jpg');
-  background-position: left;
+  background-position: right;
   background-size: cover;
 }
 .post-body{
