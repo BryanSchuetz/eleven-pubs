@@ -1,0 +1,34 @@
+name: netlify-plugin-ghost-markdown
+inputs:
+  - name: ghostURL
+    description: Your Ghost domain, must not end in a trailing slash
+    required: true
+  - name: ghostKey
+    description: Content API key from the Integrations screen in Ghost Admin
+    required: true
+  - name: assetsDir
+    description: Directory containing image assets (assets/images by default)
+  - name: pagesDir
+    description: Directory containing pages (site root by default)
+  - name: postsDir
+    description: Directory containing posts (_posts/ directory by default)
+  - name: tagPages
+    description: Optionally output tag pages (turned off by default)
+  - name: authorPages
+    description: Optionally output author pages (turned off by default)
+  - name: tagsDir
+    description: Directory containing tags (tag/ directory by default)
+  - name: authorsDir
+    description: Directory containing authors (author/ directory by default)
+  - name: pagesLayout
+    description: Layout value for pages (page by default)
+  - name: postsLayout
+    description: Layout value for posts (post by default)
+  - name: tagsLayout
+    description: Layout value for tags (tag by default)
+  - name: authorsLayout
+    description: Layout value for authors (author by default)
+  - name: postDatePrefix
+    description: Date prefix on post file names (true by default)
+  - name: cacheFile
+    description: Set the filename and path for the cache file (_data/ghostMarkdownCache.json by default)
