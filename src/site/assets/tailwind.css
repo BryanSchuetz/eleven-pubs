@@ -9,8 +9,11 @@
   background-image: url(/assets/images/large-wallpaper-white.jpg);
   background-position: center;
 }
+.blog-banner{
+  margin-top: 65px;
+}
 .devs-banner, .digital-banner{
-  background-image: url('/assets/images/devs-banner-short.png');
+  background-image: url('/assets/images/banner-left.png');
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
