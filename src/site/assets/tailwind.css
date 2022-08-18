@@ -51,6 +51,9 @@
   font-weight: bold;
   text-decoration: underline;
 }
+.prose img{
+  margin-bottom: 0px;
+}
 .prose a:hover{
   text-decoration: none;
 }
