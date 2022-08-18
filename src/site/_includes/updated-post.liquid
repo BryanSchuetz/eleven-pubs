@@ -20,7 +20,7 @@
                     <img src="/assets/images/authors.svg" class="w-24 h-24" alt="">
                   </div>
                   <div>
-                    <h4 class="capitalize text-lg font-bold">
+                    <h4 class="capitalize text-lg font-bold mb-0">
                     {% for author in postAuthors %}
                       {% assign postAuthor-details = experts | where:"name", author %}<a href="{{postAuthor-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}">{{author}}</a>{% unless forloop.last %}, {% endunless %}
                     {% endfor %}

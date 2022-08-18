@@ -12,11 +12,31 @@
 .blog-banner{
   margin-top: 65px;
 }
+@media screen and (min-width: 480px){
+  .blog-banner{
+    margin-top:92px;
+  }
+}
+@media screen and (min-width: 600px){
+  .blog-banner{
+    margin-top:111px;
+  }
+}
+@media screen and (min-width: 768px){
+  .blog-banner{
+    margin-top:115px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .blog-banner{
+    margin-top:128px;
+  }
+}
 .devs-banner, .digital-banner{
   background-image: url('/assets/images/banner-left.png');
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .digital-banner{
   background-image: url('/assets/images/digital-banner.jpg');
