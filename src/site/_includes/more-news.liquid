@@ -16,7 +16,7 @@
           {% for post in more-posts limit:30 offset:9 %}
           <div>
             <div>
-              <a href="#" class="inline-block">
+              <a href="/developments" class="inline-block">
                 <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-bold {% if post.data.tags contains 'hash-developments' %}bg-daiBlue{% elsif post.data.tags contains 'hash-devalts' %}bg-daiDark{% else %}bg-daiBlue{% endif %} text-white">{% if post.data.tags contains 'hash-developments' %}Developments{% elsif post.data.tags contains 'hash-devalts' %}Developing Alternatives{% else %}Developments{% endif %}</span>
               </a>
             </div>

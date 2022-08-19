@@ -68,5 +68,7 @@ nav-main-news:
   - text: View More News
     link: /news/view-more-news
 nav-main-publications:
-  - text: View More Articles
-    link: /publications/view-more-articles
+  - text: Developments Blog
+    link: /developments
+  - text: Digital@DAI Blog
+    link: https://dai-global-digital.com/

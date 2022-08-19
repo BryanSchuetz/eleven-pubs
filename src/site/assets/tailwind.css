@@ -9,6 +9,10 @@
   background-image: url(/assets/images/large-wallpaper-white.jpg);
   background-position: center;
 }
+.blogs-header.developments{
+  background-image: url(/assets/images/devs-header-tall.png);
+  background-position: center;
+}
 .blog-banner{
   margin-top: 65px;
 }
@@ -117,7 +121,7 @@
   margin-right: 1rem;
 }
 .daiButtons:hover{
-  background: #644C85 radial-gradient(circle, transparent 1%, #644C85 1%) center/15000%;
+  background-color: #1f8acc;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0,0,0,.12);
 }
 
