@@ -44,7 +44,7 @@ pagination:
   var index = client.initIndex('Publications');
   //initialize autocomplete on search input (ID selector must match)
   autocomplete('#aa-search-input',
-    { hint: false, debug: true, autoselect: true, keyboardShortcuts: ['s', '/'] }, {
+    { hint: false, debug: true, autoselect: false, keyboardShortcuts: ['s', '/'] }, {
       source: autocomplete.sources.hits(index, { hitsPerPage: 10 }),
       //value to be displayed in input control after user's suggestion selection
       displayKey: 'my_attribute',
