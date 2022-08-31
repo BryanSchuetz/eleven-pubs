@@ -28,8 +28,7 @@ ul, ol, dl {
 Classes to pul: wrapper, #header, header-utility_nav, header-site_nav, header-inner, header-nav, header-inner--wrap, header-inner--logo, header-nav--main
 
 */
-.wrapper {
-  *zoom: 1; }
+
   .wrapper:before, .wrapper:after {
     content: " ";
     display: table; }
