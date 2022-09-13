@@ -6,6 +6,7 @@ const toml = require("toml");
 const getSimilarCategories = function(categoriesA, categoriesB) {
   return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
 }
+const xmlFiltersPlugin = require('eleventy-xml-plugin');
 
 
 /* Debugging Filter */
@@ -15,10 +16,11 @@ const timeToRead = require('eleventy-plugin-time-to-read');
 
 module.exports = function (eleventyConfig) {
   //**Plugins**
+  
   eleventyConfig.addPlugin(timeToRead, {
     style: 'short'
   });
-
+  eleventyConfig.addPlugin(xmlFiltersPlugin);
   
   //**Watch Targets**
 

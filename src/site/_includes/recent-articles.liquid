@@ -24,9 +24,11 @@
         </div>
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
-            <p class="text-sm font-medium text-indigo-600 mb-0">
-              <a href="/developments" class="hover:text-daiLinks hover:brightness-95 uppercase text-daiLinks font-bold">{% if post.data.tags contains 'hash-developments' %}Developments{% elsif post.data.tags contains 'hash-devalts' %}Developing Alternatives{% else %}Developments{% endif %} </a>
-            </p>
+            {% unless title == 'Developments' %}
+              <p class="text-sm font-medium text-indigo-600 mb-0">
+                <a href="/developments" class="hover:text-daiLinks hover:brightness-95 uppercase text-daiLinks font-bold">{% if post.data.tags contains 'hash-developments' %}Developments{% elsif post.data.tags contains 'hash-devalts' %}Developing Alternatives{% else %}Developments{% endif %} </a>
+              </p>
+            {% endunless  %}
             <a href="{{ post.url }}" class="block mt-2">
               <p class="text-xl font-semibold text-gray-900">{{post.data.title}}</p>
               <hr class="daiBar border-y-4 w-12 border-daiDark">

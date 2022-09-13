@@ -77,6 +77,12 @@
   margin-right: -50vw;
 }
 
+.prose iframe{
+  aspect-ratio: 16 / 9;
+	height: 100% !important;
+	width: 100% !important;
+}
+
 .prose blockquote{
   width: 100vw;
   position: relative;
@@ -87,7 +93,19 @@
   color: white;
   background-image: url(/assets/images/quote-background.jpg);
   background-size: cover;
-  @apply p-16
+  padding: 4rem;
+  padding-left: 8rem;
+  font-style: normal;
+}
+@media screen and (min-width: 1460px) {
+  .prose blockquote{
+    padding-left: 10rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .prose blockquote{
+    padding-left: 11rem;
+  }
 }
 .prose blockquote em{
   display: block;
@@ -347,3 +365,17 @@ div.kg-gallery-image img{
   </div>
 </div> */
 
+.author-pic{
+  position: relative;
+  float: left;
+}
+.author-pic.i2{
+  left: -10%;
+}
+
+.author-pic.i3{
+  left: -20%;
+}
+.author-pic.i4{
+  left: -30%;
+}
