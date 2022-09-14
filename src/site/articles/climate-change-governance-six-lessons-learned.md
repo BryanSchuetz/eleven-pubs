@@ -2,7 +2,7 @@
 date: 2021-11-08
 title: "Climate Change Governance: Six Lessons Learned"
 layout: post
-excerpt: ""
+excerpt: "Climate change works against the achievement of all the Sustainable Development Goals, from poverty reduction and food security to institution and capacity building."
 image: ""
 tags: [european-union, usaid, climate, governance]
 ---

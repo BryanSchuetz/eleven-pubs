@@ -2,7 +2,7 @@
 date: 2020-02-14
 title: "Restoring Trust: Toward a People-Centric Security Sector in The Gambia"
 layout: post
-excerpt: ""
+excerpt: "It’s hard to imagine that The Gambia emerged only recently from 22 years of authoritarian rule: first impressions are of a vibrant and happy nation. "
 image: ""
 tags: [fragile-states, stability, governance, european-union]
 ---

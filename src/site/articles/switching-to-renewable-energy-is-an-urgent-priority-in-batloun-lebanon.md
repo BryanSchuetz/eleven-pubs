@@ -2,7 +2,7 @@
 date: 2021-11-04
 title: "Q&A: Switching to Renewable Energy is an Urgent Priority in Batloun, Lebanon"
 layout: post
-excerpt: ""
+excerpt: "Marwan Kaiss has been the Mayor of Batloun, Lebanon, since 2016. Batloun is a small town in the Chouf district, which forms part of the Chouf Biosphere Reserve. Its natural beauty, proximity to the Reserve, and rich history make it a top spot for environmental and cultural tourism."
 image: ""
 tags: [climate, environment-and-energy, european-union]
 ---

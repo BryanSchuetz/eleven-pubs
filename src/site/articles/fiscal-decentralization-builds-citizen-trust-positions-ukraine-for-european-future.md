@@ -2,7 +2,7 @@
 date: 2021-02-03
 title: "Fiscal Decentralization Builds Citizen Trust, Positions Ukraine for European Future"
 layout: post
-excerpt: ""
+excerpt: "Sharing borders with four European Union (EU) member states—Hungary, Poland, Romania, and Slovakia—Ukraine is now a participant in the European Neighbourhood Policy and the Eastern Partnership, and thus a priority partner of the EU."
 image: ""
 tags: [governance, public-financial-management, finance, technology, european-union]
 ---

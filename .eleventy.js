@@ -117,6 +117,11 @@ module.exports = function (eleventyConfig) {
       return b.date - a.date
     });
   });
+  eleventyConfig.addCollection("europeanPosts", function(collectionApi) {
+    return collectionApi.getFilteredByTag("european-union").sort(function(a,b){
+      return b.date - a.date
+    });
+  });
   //**Optimizations**
 
   //minify html

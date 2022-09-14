@@ -2,7 +2,7 @@
 date: 2021-04-28
 title: "Zimbabwe Agriculture Project Finds Ways to Engage Smallholder Farmers, Despite COVID-19"
 layout: post
-excerpt: ""
+excerpt: "March 30 marked one year since the Government of Zimbabwe declared the country’s first nationwide lockdown to curb the spread of COVID-19. The strict lockdown and enforcement measures have caused significant hardship for most citizens, but particularly for informal traders in poorer urban area..."
 image: ""
 tags: [covid-19, economic-growth, agriculture, european-union]
 ---

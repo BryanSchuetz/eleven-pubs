@@ -2,7 +2,7 @@
 date: 2021-06-24
 title: "EU Forest Project in Liberia Tackles Deforestation and Paves the Way for Stability"
 layout: post
-excerpt: ""
+excerpt: "Liberia is home to half of the remaining rainforest in West Africa. Covering more than 60 percent of the nation’s land surface, forests are the fourth-largest contributor to Liberia’s economy and an important source of income for one-third of its 4.5 million people."
 image: ""
 tags: [environment-and-energy, forestry, economic-growth, land-rights, land-tenure, resilience, european-union]
 ---

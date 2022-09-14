@@ -2,7 +2,7 @@
 date: 2021-03-08
 title: "Supporting Women’s Inclusion Through Community Development in Pakistan"
 layout: post
-excerpt: ""
+excerpt: "Since the early 2000s, the province of Khyber Pakhtunkhwa (KP), home to more than 30 million citizens in northwest Pakistan, has suffered from the effects of militancy and natural disasters. "
 image: ""
 tags: [governance, european-union, pakistan]
 ---
