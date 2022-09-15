@@ -1,0 +1,13 @@
+---
+permalink: /pubs.yml
+---
+{% capture newline %}
+
+{% endcapture %}
+{% for post in collections.featuredPosts | limit:10 %}
+- title: |
+    {{ post.data.title | strip_html | strip_newlines }}
+  date: {{ post.date | date: "%Y-%m-%d" }}
+  link: "https://dai-global-developments.com{{ post.url }}?utm_source=daidotcom"
+  summary: |
+    {{ post.data.excerpt | strip_html | replace: newline,' ' | xml_escape }}{% endfor %}
