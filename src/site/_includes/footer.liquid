@@ -14,19 +14,3 @@
     <p class="legaleeze">DAI is an equal opportunity/affirmative action employer with a commitment to diversity. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity or national origin. <a href="/eeo">Related Resources</a></p>
   </div>
 </footer>
-<script>
-  const images = document.querySelectorAll('.kg-image-card img, .kg-gallery-card img');
-  
-  // Lightbox function
-  images.forEach(function (image) {
-    var wrapper = document.createElement('a');
-    wrapper.setAttribute('data-no-swup', '');
-    wrapper.setAttribute('data-fslightbox', '');
-    wrapper.setAttribute('href', image.src);
-    wrapper.setAttribute('aria-label', 'Click for Lightbox');
-    image.parentNode.insertBefore(wrapper, image.parentNode.firstChild);
-    wrapper.appendChild(image);
-  });
-  
-  refreshFsLightbox();
-  </script>
