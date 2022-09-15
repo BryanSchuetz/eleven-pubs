@@ -35,6 +35,11 @@ module.exports = function (eleventyConfig) {
     "./src/site/assets/css/legacy.css": "./assets/css/legacy.css",
   }); 
 
+  //Legacy Images
+  eleventyConfig.addPassthroughCopy({
+    "./src/site/assets/old-uploads": "./uploads",
+  }); 
+
   //Alpine
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/cdn.js": "./assets/js/alpine.js",
