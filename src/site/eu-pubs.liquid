@@ -9,5 +9,4 @@ permalink: eu-pubs.yml
     {{ post.data.title | strip_html | strip_newlines }}
   link: "https://dai-global-developments.com{{ post.url }}?utm_source=daidotcom"
   summary: |
-    {{ post.data.excerpt | strip_html | xml_escape }}
-{% endfor %}
+    {{ post.data.excerpt | strip_html | xml_escape }}{% endfor %}
