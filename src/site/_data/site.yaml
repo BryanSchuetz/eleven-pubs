@@ -68,7 +68,7 @@ nav-main-news:
   - text: View More News
     link: https://www.dai.com/news/view-more-news
 nav-main-publications:
-  - test: Blog Posts
+  - text: Blog Posts
     link: /
   - text: Developments Blog
     link: /developments
