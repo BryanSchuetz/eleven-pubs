@@ -4,69 +4,69 @@ description: "By freely sharing what we learn, we have built a reputation as tho
 url: ""
 nav-util:
   - text: FAQ
-    link: https://www.dai.com/faq
+    link: /faq
   - text: SIGN UP
-    link: https://www.dai.com/sign-up
+    link: /sign-up
   - text: CONTACT US
-    link: https://www.dai.com/contact-us
+    link: /contact-us
   - text: PROJECT LOGIN
-    link: https://www.dai.com/project-login
+    link: /project-login
   - text: JOBS
-    link: https://www.dai.com/careers/working-at-dai
+    link: /careers/working-at-dai
 nav-main:
   - text: Who We Are
-    link: https://www.dai.com#who-we-are
+    link: #who-we-are
   - text: Our Work
-    link: https://www.dai.com#our-work
+    link: #our-work
   - text: Publications
-    link: https://www.dai.com#stories
+    link: #publications
   - text: News
-    link: https://www.dai.com#news
+    link: #news
   - text: Careers
-    link: https://www.dai.com/careers/working-at-dai
+    link: /careers/working-at-dai
 nav-main-who:
   - text: Mission & Values
-    link: https://www.dai.com/who-we-are/mission-and-values
+    link: /who-we-are/mission-and-values
   - text: History
-    link: https://www.dai.com/who-we-are/history
+    link: /who-we-are/history
   - text: Leadership
-    link: https://www.dai.com/who-we-are/leaders
-    children: https://www.dai.com/who-we-are/board
+    link: /who-we-are/leaders
+    children: /who-we-are/board
   - text: Global Offices
-    link: https://www.dai.com/who-we-are/global
+    link: /who-we-are/global
   - text: Our Team
-    link: https://www.dai.com/who-we-are/the-team
+    link: /who-we-are/the-team
     children: team
   - text: Ethics & Integrity
     link: /who-we-are/ethics-integrity
 nav-main-working:
   - text: Working at DAI
-    link: https://www.dai.com/careers/working-at-dai
+    link: /careers/working-at-dai
   - text: Benefits
-    link: https://www.dai.com/careers/benefits
+    link: /careers/benefits
   - text: Career Areas
-    link: https://www.dai.com/careers/career-areas
+    link: /careers/career-areas
   - text: DAI People
-    link: https://www.dai.com/careers/dai-people
+    link: /careers/dai-people
   - text: Why DAI
-    link: https://www.dai.com/careers/why-dai
+    link: /careers/why-dai
 nav-main-our:
   - text: Solutions
-    link: https://www.dai.com/our-work/the-solutions
-    children: https://www.dai.com/our-work/solutions
+    link: /our-work/the-solutions
+    children: /our-work/solutions
   - text: Regions
-    link: https://www.dai.com/our-work/the-regions
-    children: https://www.dai.com/our-work/regions
+    link: /our-work/the-regions
+    children: /our-work/regions
   - text: Projects
-    link: https://www.dai.com/our-work/the-projects
-    children: https://www.dai.com/our-work/projects
+    link: /our-work/the-projects
+    children: /our-work/projects
   - text: Our Clients
-    link: https://www.dai.com/our-work/our-clients
+    link: /our-work/our-clients
   - text: Working with DAI
-    link: https://www.dai.com/our-work/working-with-us
+    link: /our-work/working-with-us
 nav-main-news:
   - text: View More News
-    link: https://www.dai.com/news/view-more-news
+    link: /news/view-more-news
 nav-main-publications:
   - text: Blog Posts
     link: /
