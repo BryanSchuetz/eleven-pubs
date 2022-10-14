@@ -51,7 +51,7 @@ nav-main-working:
   - text: Why DAI
     link: /careers/why-dai
   - text: Alumni Network
-    link: https://alumni.dai.com
+    link: /alumni-network
 nav-main-our:
   - text: Solutions
     link: /our-work/the-solutions
