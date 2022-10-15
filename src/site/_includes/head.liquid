@@ -5,13 +5,13 @@
   <meta name="robots" content="index, follow">
   <!-- Enable responsiveness on mobile devices -->
   <meta name="viewport" content="">
-  <meta name="keywords" content="{{ site.title }} | {{ page.title }}">
+  <meta name="keywords" content="{{ site.title }} | {{ title }}">
   <meta name="description" content="{{ title }} &middot; {{ site.description }}">
   <!-- Enable twitter card magic -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@daiglobal">
   <meta name="twitter:creator" content="@daiglobal">
-  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="https://og-image-testing-bryanschuetz.vercel.app/api/param?title={{title | url_encode | default: "https://www.dai.com/uploads/social-image.jpg" }}">
   <title>{{ title }} &middot; {{ site.title }}</title>
