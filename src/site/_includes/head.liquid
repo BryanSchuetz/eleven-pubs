@@ -14,6 +14,7 @@
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html | truncate: 300 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="twitter:image" content="{{ site.url }}{{ image | default: "https://www.dai.com/uploads/social-image.jpg" }}">
+  <meta name="og:image" content="https://og-image-testing-bryanschuetz.vercel.app/api/param?title={{title | url_encode | default: "https://www.dai.com/uploads/social-image.jpg" }}">
   <title>{{ title }} &middot; {{ site.title }}</title>
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.url }}/assets/style.css?v=40">
