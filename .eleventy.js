@@ -35,6 +35,11 @@ module.exports = function (eleventyConfig) {
     "./src/site/assets/css/legacy.css": "./assets/css/legacy.css",
   }); 
 
+  //Podcast RSS
+  eleventyConfig.addPassthroughCopy({
+    "./src/site/podcast.rss": "./assets/podcast.rss",
+  });
+
   //Legacy Images
   eleventyConfig.addPassthroughCopy({
     "./src/site/assets/old-uploads": "./uploads",
