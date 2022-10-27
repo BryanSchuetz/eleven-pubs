@@ -1,0 +1,113 @@
+---
+permalink: unburdened-podcast
+layout: base.liquid
+description: Podcast Index Page
+title: Unburdened Podcast
+---
+<script src="https://kit.fontawesome.com/a7a8a2a44a.js" crossorigin="anonymous"></script>
+<div class="base-container mt-[65px] lg:mt-[128px]">
+  <!-- BLOGS HEADER -->
+  <div class="blogs-header unburdened">
+    <div class="pb-6">
+      <div class="mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between items-center">
+        <div class="max-w-xl pr-3" style="width: 100%;">
+          <img src="/assets/images/logo.svg" alt="">
+        </div>
+        <div class="mt-16 w-full max-w-xs">
+          <div class="mt-1.5 relative blog-search">
+            <div>
+              <div class="mt-1 w-full">
+                <p class="mt-5 text-xl text-white">Lightening our load by tackling big global health questions that aren't related to healthcare.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- END Podcast HEADER -->
+  {%- comment -%} Podcast Buttons {%- endcomment -%}
+  <div class="mx-auto  sm:px-6 lg:px-8 bg-[#557D91] py-8 grid place-items-center">
+      <span class="isolate inline-flex rounded-md shadow-sm">
+        <button onclick="window.open('https://feeds.soundcloud.com/users/soundcloud:users:1167420997/sounds.rss')" type="button" class="relative inline-flex items-center rounded-l-[4px] border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-solid fa-rss w-4 h4 mr-1"></i> RSS</button>
+        <button onclick="window.open('https://podcasts.apple.com/us/podcast/unburdened/id1647023176')" type="button" class="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-brands fa-apple w-4 h4 mr-1"></i> Apple</button>
+        <button onclick="window.open('https://open.spotify.com/show/65FND64bWAlO16alNrA4yG?si=f7dac8786306462c')" type="button" class="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-brands fa-spotify w-4 h4 mr-1"></i> Spotify</button>
+        <button onclick="window.open('https://www.stitcher.com/show/1033661')" type="button" class="relative -ml-px inline-flex items-center rounded-r-[4px] border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-solid fa-podcast w-4 h4 mr-1"></i> Stitcher</button>
+      </span>
+  </div>
+<div class="bg-[#F7F7F7] ">
+  <div class="max-w-4xl mx-auto py-8 sm:py-24">
+    <h2 class="mt-10 text-4xl">We all know health issues weigh us down.</h2>
+      <hr class="daiBar mb-4 border-y-4 w-14 border-daiDark">
+    <div class="container max-w-4xl">
+      <p>And when we think about health, we probably think about our individual health issues and wellbeing, or a disease we’ve had, or past surgery, or some other personal burden. </p>
+      <p>But in fact, much of what ails us is connected with the world around us. Where we live, our environment, our communities, our relationships—even our social status deeply affects our health and wellbeing, in many cases including our life expectancy. </p>
+      <p>Bad environments, poor relationships, marginalization, and poverty weigh down our health and shape our lives. Have you ever felt crippled by financial instability or poverty? Choked by polluted air or the garbage on your streets? Have you been effectively cut off from health services because of your race, class, or gender? Perhaps you have had to flee your home because of conflict or violence…</p>
+      <p>What can we do about these things? How can we collectively live healthier lives and alleviate some of these factors weighing on our health? Join us this October as we kick off Unburdened, DAI’s podcast about what it really takes to shape a healthier, more livable world.  </p>
+    </div>
+  </div>
+</div>
+<!-- PODCAST ONE -->
+{% assign postOne = collections.featuredPosts | first  %}
+<!-- SET AUTHORS We're doing a couple of odd things here (driven by Ghost constraints forcing us to pass a lot of our structured data as tags).-->
+<!-- Return subset of tags array with only hash-by tags, cast as a string, format the names properly, then move back to an array-->
+{% assign postOneAuthors = postOne.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+<!-- Return subset of tags array with only the non-internal tags -->
+{% assign postOne-tags = postOne.data.tags | pluckNot:"hash" %}
+<div class="bg-daiLightGray">
+  <div class="max-w-7xl mx-auto py-16 sm:py-24">
+  <div class="back-box border-[16px] border-white h-[1600px] xl:h-[1750] w-[60%] z-0 absolute ml-10">
+      <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">Season 01</span> <span class="font-normal">Episodes</span></h2>
+      <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
+      <p class="mt-2 ml-8">Please listen to the episodes in order.</p>
+  </div>
+    <div class="mt-52 sm:mt-40">
+      <div class="grid grid-cols-2 gap-0 max-w-7xl mx-auto ">
+        <div class="bg-[#557D91] z-10">
+          <div class="">
+            <h3 class="text-2xl uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">
+              EPISODE #1
+            </h3>
+            <!-- PODCAST PREVIEW -->
+            <div class="post-preview bg-white p-8">
+              <h2 class="text-3xl">Can gender equity make us healthier</h2>
+              <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
+              <p class="mb-8">Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?</p>
+              
+              <button onclick="window.location.href='unburdened-season-1/episode-1'" type="button" class="daiButtons my-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+            </div>
+          </div>
+        </div>
+        <div class="z-10">
+          {% assign default-feature = '/assets/images/default-feature.png' %}
+          <div class="container h-full" style="background: url('/assets/images/scaled-episode-1-banner.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- POST OTHERS -->
+<div class="bg-daiLightGray pb-16">
+  <div class="grid grid-cols-2 gap-6 content-end max-w-5xl mx-auto bg-daiLightGray">
+    {% assign podcasts = podcast.episodes %}
+    {% assign postOthers = collections.featuredPosts %}
+    {% for podcast in podcasts offset:1 %}
+    <div class="bg-white z-10">
+      <div class="bg-[#557D91]">
+        <h3 class="uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">EPISODE #{{podcast.number}}</h3>
+      </div>
+      <div class="feature-image aspect-square" style="background: url('/assets/images/scaled-episode-{{podcast.number}}-banner.jpg'); background-position: center;">
+      </div>
+      <div class="post-preview bg-white p-8 flex flex-col min-h-[500px]">
+        <h2 class="text-3xl">{{ podcast.title }}</h2>
+        <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
+        <div class="flex-grow">
+          <p class="mb-8">{{ podcast.description }}</p>
+        </div>
+        <button onclick="window.location.href='/unburdened-season-1/episode-{{podcast.number}}'" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+      </div>
+    </div>
+    {% endfor %}
+</div>    
+</div>

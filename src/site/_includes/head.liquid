@@ -17,8 +17,8 @@
   <meta property="og:image" content="https://og-image-testing-bryanschuetz.vercel.app/api/param?title={{title | url_encode | default: "https://www.dai.com/uploads/social-image.jpg" }}">
   <title>{{ title }} &middot; {{ site.title }}</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.url }}/assets/style.css?v=40">
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/legacy.css?v=40">
+  <link rel="stylesheet" href="{{ site.url }}/assets/style.css?v=41">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/legacy.css?v=41">
   <!-- Should I add some kind of time based paramater to the CSS URL for cache busting? -->
   <!-- Icons -->
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.png">
@@ -26,6 +26,8 @@
 <script type="text/javascript" src="/assets/js/site.js?v=40"></script>
 <!-- Should I add some kind of time based paramater to the JS URL for cache busting? -->
 <script type="text/javascript" src="/assets/js/turbo.js"></script>
+{%- comment -%} Using Alpine for easy interactivity {%- endcomment -%}
+<script type="text/javascript" src="/assets/js/alpine.js" defer></script>
   <!-- proxima nova hosted at typekit -->
   {% include 'webfonts.liquid' %}
   <!-- RSS -->

@@ -36,7 +36,15 @@
           </ul>{% endunless %}</li>
           <li class="header-nav-li--tiered has-dropdown"><a id="publications-nav" href="https://www.dai.com#publications" class="active">Publications</a>{% unless page.title == "Home" %}<ul class="dropdown">
             {% for item in site.nav-main-publications %}
-              <li {% assign strip_link = item.link | remove:".html" %} class="{% if page.url contains strip_link or page.url contains item.children %}{{ "active" }}{% endif %}"><a href="{{ item.link }}">{{ item.text }}</a></li>
+              <li {% assign strip_link = item.link | remove:".html" %} class="
+              {% if item.text == "Blog Posts" %}
+                {% if page.url == '/' or page.url contains '/articles/'%}
+                  active
+                {% endif %}
+              {% else %}
+              {% if page.url contains strip_link or page.url contains item.children %}active{% endif %}
+              {% endif %}
+              "><a href="{{ item.link }}">{{ item.text }}</a></li>
             {% endfor %}
           </ul>{% endunless %}</li>
           <li class="has-dropdown"><a id="news-nav" href="https://www.dai.com/#news{% if page.title == "Home" %}{{"_hash"}}{% endif %}" class="{% if page.url contains "news" %}{{"active"}}{% endif %}">News</a>{% unless page.title == "Home" %}<ul class="dropdown">

@@ -1,0 +1,126 @@
+episodes:
+  - number: 1
+    title: Can gender equity make us healthier?
+    description: |
+      Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?
+    fulldesc: |
+      COVID-19 was bad for the planet, bad for democracy, and bad for healthcare—it also dramatically increased inequality.  
+
+      Between 2019 and 2021, the wealth of the top 0.001 percent grew 14 times more than the global average. But COVID didn’t just exacerbate economic inequality—there have been social consequences, too. 
+
+      The social and health impacts on women were particularly bad.  
+
+      According to the United Nations, one in two women say that they or a female they know has experienced violence since the COVID-19 pandemic. Women also picked up a larger share of the domestic burden during the pandemic—meaning unpaid work such as household chores, shopping, and childcare. Women’s labor force participation also declined, with more women taking time out to care for children or manage their households during lockdowns. 
+
+      Numerous inequality and empowerment metrics suggest that women fared worse than men as a result of COVID. But do these lost “equality gains” matter? Will gender equality really help us build a world that is more resilient? And is equality related to health?
+    notes:
+      - text: Violence Against Women During COVID-19, UN Women
+        link: https://data.unwomen.org/publications/vaw-rga
+      - text: World Inequality Report, 2022, from the World Inequality Lab
+        link: https://wir2022.wid.world/www-site/uploads/2022/03/0098-21_WIL_RIM_RAPPORT_A4.pdf
+      - text: 'Association between gender inequality and population-level health outcomes: Panel data analysis of organization for Economic Cooperation and Development (OECD) countries, the Lancet.'
+        link: https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(21)00331-X/fulltext
+      - text: The GINI Index, World Bank
+        link: https://data.worldbank.org/indicator/SI.POV.GINI
+    embed: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1348880188&color=%23265e6e&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>'
+    guests:
+      - name: Paula Quigley
+        title: Technical Lead, Global Health, DAI
+      - name: Jacqui Moller Larsen
+        title: Senior Global Practice Lead, Health Equity, DAI
+      - name: Cecilia Veas Palaminos
+        title: Public Health Researcher, Ministry of Health, Chile
+  - number: 2
+    title: Why aren’t men and women equal?
+    description: |
+      If there’s a gap between men and women, how do we know that empirically? How can we measure it? And what stands in the way of men and women being more equal? 
+    fulldesc: |
+      If we want to talk about why men and women aren’t equal, we need to think about what inequality really is. Inequality has many dimensions. It’s not just about how much money or resources one group has compared to another. Inequality can also revolve around social, economic, or political structures—such as discriminatory laws or policies. Looking at the way inequality is measured can help us understand some of the barriers to equality between men and women.
+    notes:
+      - text: The most recent GII was published in the 2021 Human Development Index report, p.291 
+        link: https://hdr.undp.org/system/files/documents/global-report-document/hdr2021-22pdf_1.pdf
+      - text: Gender & Social Norms Index
+        link: https://hdr.undp.org/system/files/documents/hdperspectivesgsnipdf_1.pdf
+    embed: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1366193017&color=%23265e6e&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>'
+    guests:
+      - name: Carolina Rivera
+        title: Rsearch Analyst, Human Development Report Office, UNDP
+      - name: Yu-Chieh Hsu
+        title: Statistics Analyst, Human Development Report Office, UNDP
+      - name: Zainab Moukarim
+        title: Senior Technical Director, DAI Nigeria
+      - name: Deepa Shakya
+        title: Integration Director, DAI Nepal
+  - number: 3
+    title: Can female politicians make us healthier?
+    description: |
+      For a long time, women in politics wasn’t a thing. People like Merkel, Marin, May, Sirleaf, and Arden have given us a vision for women as decision makers. Will more female politicians in positions of power make our societies healthier?
+    fulldesc: |
+      For much of history, women lived in a man’s world where men were simply assumed to be stronger, better, and smarter. Women, accordingly had limited opportunities for political participation, and were frequently excluded from decision making. 
+
+      Thankfully, those attitudes seem to be shifting. According to the Gender Inequality Index, women on average hold about 25 percent of seats in parliaments globally, up from 13 percent in 2000—so, considerable progress has been made in just 20 years. 
+
+      Parliamentary participation is part of the Gender Inequality Index discussed in Episode 2. It falls under the “empowerment” dimension. In theory, empowering women in society means a greater number of choices for women. But does it have an empirical benefit in improving women’s health?
+    notes:
+      - text: Maternal Mortality & Political Participation Reserach
+        link: https://docs.iza.org/dp11590.pdf
+      - text: Yentl Syndrome
+        link: https://www.nejm.org/doi/full/10.1056/nejm199107253250408
+      - text: Beijing Declaration and Platform for Action
+        link: https://www.unwomen.org/sites/default/files/Headquarters/Attachments/Sections/CSW/PFA_E_Final_WEB.pdf
+      - text: Consolidating Democracy in Pakistan
+        link: https://www.dai.com/our-work/projects/pakistan-consolidating-democracy-in-pakistan-cdip
+      - text: DHS Survey Pakistan 2012-13
+        link: https://www.biomedcentral.com/search?query=author%23Khalifa%20Elmusharaf
+      - text: DHS Survey Pakistan 2017-18
+        link: https://dhsprogram.com/pubs/pdf/FR354/FR354.pdf
+    embed: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1351377769&color=%23265e6e&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>' 
+    guests:
+      - name: Damian Clarke
+        title: Assistant Professor, University of Chile
+      - name: Sairah Zaidi
+        title: Former Team Lead, Consolidating Democracy in Pakistan, DAI
+      - name: Kurram Jilani
+        title: Former Director of Programs, Consolidating Democracy in Pakistan, DAI
+  - number: 4
+    title: Can better reproductive health make us more equal? 
+    description: |
+      How society treats a woman during pregnancy and childbirth is a signal of women’s status in society. Do we value maternal health as integral to the health of our communities? 
+    fulldesc: |
+      The health of women in their most physically vulnerable moments affects the health of entire societies and the prospects for our next generation. The first 1,000 days of a child’s life, from conception to two years old, is the most critical period for brain development. A mother’s health and nutrition deeply influence the health of her child, even in utero. Access to healthcare, such as ante and postnatal care, or to skilled birth attendants, is the key to better survival rates for mothers and babies. 
+      
+      How society treats a woman during pregnancy and childbirth is also a signal of women’s status in society. We explore how improving reproductive health can improve gender equality across various dimensions, helping women become better educated, participate more in the workforce, and overcome chauvinism. 
+    notes:
+      - text: DHS Survey Nigeria 2008
+        link: https://dhsprogram.com/publications/publication-fr222-dhs-final-reports.cfm
+      - text: DHS Survey Nigeria 2013
+        link: https://dhsprogram.com/publications/publication-fr293-dhs-final-reports.cfm
+    embed: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1366195879&color=%23265e6e&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>'
+    guests:
+      - name: Hadiza Sabo
+        title: Provost of College of Nursing & Midwifery, Yobe State, Nigeria
+      - name: Charles Ameh
+        title: Interim Head International Public Health Department, Liverpool School of Tropical Medicine
+      - name: Adetoro Adegoke
+        title: Technical Lead, Global Health, DAI
+  - number: 5
+    title: Where do we go from here?
+    description: |
+      What’s next and where do we go from here? As development practitioners and public health professionals, how do we make our work more gender equal?  
+    fulldesc: |
+      Where do we go from here? If you work in development or in public health, you know there’s a mountain of analysis and research about how best to support women and girls. We can’t do that debate justice in this episode, but we try to break through the noise to distil three key points that should help us make our workplaces, industries, communities, and societies more equitable.
+    notes:
+      - text: Wild Network
+        link: https://www.wildleadershipforum.org/
+    embed: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1366196551&color=%23265e6e&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>'
+    guests:
+      - name: Fiona Macaulay
+        title: Founder-CEO, WILD Network
+      - name: Bobby Jefferson
+        title: Vice President of Diversity, Equity, Engagement & Inclusion, DAI
+      - name: Leslie Gonzales
+        title: Director & Gender Advisor, DAI
+
+
+
+    
