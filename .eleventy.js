@@ -3,6 +3,11 @@ const now = String(Date.now());
 const htmlmin = require("html-minifier");
 const yaml = require("js-yaml");
 const toml = require("toml");
+const md = require("markdown-it")({
+  html: false,
+  breaks: true,
+  linkify: true,
+});
 const getSimilarCategories = function(categoriesA, categoriesB) {
   return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
 }
@@ -109,6 +114,11 @@ module.exports = function (eleventyConfig) {
     }).toRelative({});
   });
 
+  //Markdownify
+  eleventyConfig.addFilter("markdownify", (markdownString) =>
+    md.render(markdownString)
+  );
+
   //**Shortcodes**
 
   //timestamp for cache busting
@@ -132,6 +142,7 @@ module.exports = function (eleventyConfig) {
       return b.date - a.date
     });
   });
+  
   //**Optimizations**
 
   //minify html
