@@ -1,6 +1,6 @@
 episodes:
   - number: 1
-    title: Can gender equity make us healthier?
+    title: Can gender equality make us healthier?
     description: |
       Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?
     fulldesc: |
@@ -44,7 +44,7 @@ episodes:
     embed: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1366193017&color=%23265e6e&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>'
     guests:
       - name: Carolina Rivera
-        title: Rsearch Analyst, Human Development Report Office, UNDP
+        title: Research Analyst, Human Development Report Office, UNDP
       - name: Yu-Chieh Hsu
         title: Statistics Analyst, Human Development Report Office, UNDP
       - name: Zainab Moukarim
