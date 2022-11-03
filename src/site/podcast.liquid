@@ -17,7 +17,7 @@ title: Unburdened Podcast
           <div class="mt-1.5 relative blog-search">
             <div>
               <div class="mt-1 w-full">
-                <p class="mt-5 text-xl text-white">Our cut on global health issues that go beyond healthcare.</p>
+                <p class="mt-5 text-xl text-white">Our cut on global health issues that go beyond healthcare</p>
               </div>
             </div>
           </div>
@@ -48,12 +48,6 @@ title: Unburdened Podcast
   </div>
 </div>
 <!-- PODCAST ONE -->
-{% assign postOne = collections.featuredPosts | first  %}
-<!-- SET AUTHORS We're doing a couple of odd things here (driven by Ghost constraints forcing us to pass a lot of our structured data as tags).-->
-<!-- Return subset of tags array with only hash-by tags, cast as a string, format the names properly, then move back to an array-->
-{% assign postOneAuthors = postOne.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
-<!-- Return subset of tags array with only the non-internal tags -->
-{% assign postOne-tags = postOne.data.tags | pluckNot:"hash" %}
 <div class="bg-daiLightGray">
   <div class="max-w-7xl mx-auto py-16 sm:py-24">
   <div class="back-box border-[16px] border-white h-[1600px] xl:h-[1750] w-[60%] z-0 absolute ml-10">

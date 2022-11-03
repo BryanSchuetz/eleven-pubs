@@ -4,8 +4,8 @@
   "description": "Basic starter for building eleventy sites—with an Alpine, Turbo, Tailwind stack.",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --port=3000 --incremental & npx tailwindcss -i src/site/assets/tailwind.css -c tailwind.config.js -o dist/assets/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy --incremental && NODE_ENV=production npx tailwindcss -i src/site/assets/tailwind.css -c tailwind.config.js -o dist/assets/style.css --minify"
+    "start": "ELEVENTY_ENV=dev npx @11ty/eleventy --serve --port=3000  & npx tailwindcss -i src/site/assets/tailwind.css -c tailwind.config.js -o dist/assets/style.css --watch",
+    "build": "ELEVENTY_ENV=prod eleventy --incremental && NODE_ENV=production npx tailwindcss -i src/site/assets/tailwind.css -c tailwind.config.js -o dist/assets/style.css --minify"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "alpinejs": "^3.9.1",
     "chalk": "^4.0.0",
     "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
     "eleventy-plugin-time-to-read": "^1.2.0",
     "eleventy-xml-plugin": "^0.1.0",
     "fs-extra": "^8.1.0",

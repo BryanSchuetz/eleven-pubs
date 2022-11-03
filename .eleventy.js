@@ -3,6 +3,7 @@ const now = String(Date.now());
 const htmlmin = require("html-minifier");
 const yaml = require("js-yaml");
 const toml = require("toml");
+const env = require("dotenv");
 const md = require("markdown-it")({
   html: false,
   breaks: true,
@@ -20,8 +21,14 @@ const dumpFilter = require("@jamshop/eleventy-filter-dump");
 const timeToRead = require('eleventy-plugin-time-to-read');
 
 module.exports = function (eleventyConfig) {
+
+  //**Performance **
+  /* Ignore posts—for faster local builds */
+  if (process.env.ELEVENTY_ENV === "dev") {
+    eleventyConfig.ignores.add("./src/site/articles");
+  }
+
   //**Plugins**
-  
   eleventyConfig.addPlugin(timeToRead, {
     style: 'short'
   });
