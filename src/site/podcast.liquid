@@ -74,7 +74,7 @@ title: Unburdened Podcast
               <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
               <p class="mb-8">Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?</p>
               
-              <button onclick="window.location.href='unburdened-season-1/episode-1'" type="button" class="daiButtons my-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+              <button onclick="Turbo.visit('/unburdened-season-1/episode-1')" type="button" class="daiButtons my-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ title: Unburdened Podcast
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 </div>
 <!-- POST OTHERS -->
 <div class="bg-daiLightGray pb-16">
@@ -97,7 +97,7 @@ title: Unburdened Podcast
       <div class="bg-[#557D91]">
         <h3 class="uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">EPISODE #{{podcast.number}}</h3>
       </div>
-      <div class="feature-image aspect-square" style="background: url('/assets/images/scaled-episode-{{podcast.number}}-banner.jpg'); background-position: center;">
+      <div class="feature-image aspect-square" style="background: url('/assets/images/scaled-episode-{{podcast.number}}-banner.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
       </div>
       <div class="post-preview bg-white p-8 flex flex-col min-h-[500px]">
         <h2 class="text-3xl">{{ podcast.title }}</h2>
@@ -105,7 +105,7 @@ title: Unburdened Podcast
         <div class="flex-grow">
           <p class="mb-8">{{ podcast.description }}</p>
         </div>
-        <button onclick="window.location.href='/unburdened-season-1/episode-{{podcast.number}}'" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+        <button onclick="Turbo.visit('/unburdened-season-1/episode-{{podcast.number}}')" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
       </div>
     </div>
     {% endfor %}
