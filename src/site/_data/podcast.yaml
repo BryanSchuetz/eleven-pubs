@@ -1,5 +1,6 @@
 episodes:
   - number: 1
+    id: 762074030
     title: Can gender equality make us healthier?
     description: |
       Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?
@@ -31,6 +32,7 @@ episodes:
       - name: Cecilia Veas Palaminos
         title: Public Health Researcher, Ministry of Health, Chile
   - number: 2
+    id: 762659007
     title: Why aren’t men and women equal?
     description: |
       If there’s a gap between men and women, how do we know that empirically? How can we measure it? And what stands in the way of men and women being more equal? 
@@ -52,6 +54,7 @@ episodes:
       - name: Deepa Shakya
         title: Integration Director, DAI Nepal
   - number: 3
+    id: 763520366
     title: Can female politicians make us healthier?
     description: |
       For a long time, women in politics wasn’t a thing. People like Merkel, Marin, May, Sirleaf, and Arden have given us a vision for women as decision makers. Will more female politicians in positions of power make our societies healthier?
@@ -83,6 +86,7 @@ episodes:
       - name: Kurram Jilani
         title: Former Director of Programs, Consolidating Democracy in Pakistan, DAI
   - number: 4
+    id: 763600848
     title: Can better reproductive health make us more equal? 
     description: |
       How society treats a woman during pregnancy and childbirth is a signal of women’s status in society. Do we value maternal health as integral to the health of our communities? 
@@ -104,6 +108,7 @@ episodes:
       - name: Adetoro Adegoke
         title: Technical Lead, Global Health, DAI
   - number: 5
+    id: 763852763
     title: Where do we go from here?
     description: |
       What’s next and where do we go from here? As development practitioners and public health professionals, how do we make our work more gender equal?  
