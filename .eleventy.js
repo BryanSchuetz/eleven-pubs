@@ -42,6 +42,11 @@ module.exports = function (eleventyConfig) {
 
   //**Passthroughs**
 
+  //Podcast
+  eleventyConfig.addPassthroughCopy({
+    "./src/site/podcast.rss": "./assets/podcast.rss",
+  }); 
+  
   //Legacy CSS
   eleventyConfig.addPassthroughCopy({
     "./src/site/assets/css/legacy.css": "./assets/css/legacy.css",
