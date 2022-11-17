@@ -384,27 +384,27 @@ div.kg-gallery-image img{
   left: -30%;
 } 
 .episode-banner-1{
-  background-image: url('/assets/images/episode-1-banner.jpg');
+  background-image: url('/assets/images/scaled-episode-1-banner.jpg');
   background-position: center;
   background-size: cover;
 }
 .episode-banner-2{
-  background-image: url('/assets/images/episode-2-banner.jpg');
+  background-image: url('/assets/images/scaled-episode-2-banner.jpg');
   background-position: center;
   background-size: cover;
 }
 .episode-banner-3{
-  background-image: url('/assets/images/episode-3-banner.jpg');
+  background-image: url('/assets/images/scaled-episode-3-banner.jpg');
   background-position: center;
   background-size: cover;
 }
 .episode-banner-4{
-  background-image: url('/assets/images/episode-4-banner.jpg');
+  background-image: url('/assets/images/scaled-episode-4-banner.jpg');
   background-position: center;
   background-size: cover;
 }
 .episode-banner-5{
-  background-image: url('/assets/images/episode-5-banner.jpg');
+  background-image: url('/assets/images/scaled-episode-5-banner.jpg');
   background-position: center;
   background-size: cover;
 }
