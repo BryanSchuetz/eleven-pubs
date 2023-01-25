@@ -11,7 +11,7 @@
     <div class="mt-12 max-w-2xl mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none bg-daiLightGray">
       <!-- RECENT ARTICLE LOOP -->
       {% assign counter = 0 %}
-      {% for post in collections.justPosts offset:3 %}
+      {% for post in collections.featuredPosts offset:3 %}
         <!-- GHETTO LIMIT @TODO: should make this limit part of the collection call in eleventy config.-->
         {% assign counter = counter | plus: 1%}
         {% if counter == 7 %}

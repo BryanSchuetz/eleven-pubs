@@ -139,7 +139,7 @@ module.exports = function (eleventyConfig) {
   });
 
   //**Custom Collections **/
-   eleventyConfig.addCollection("featuredPosts", function(collectionApi) {
+  eleventyConfig.addCollection("featuredPosts", function(collectionApi) {
     return collectionApi.getFilteredByTag("hash-featured").sort(function(a,b){
       return b.date - a.date
     });
@@ -154,7 +154,11 @@ module.exports = function (eleventyConfig) {
       return b.date - a.date
     });
   });
-  
+  eleventyConfig.addCollection("burriedPosts", function(collectionApi) {
+    return collectionApi.getFilteredByTag("hash-bury").sort(function(a,b){
+      return b.date - a.date
+    });
+  });
   //**Optimizations**
 
   //minify html
