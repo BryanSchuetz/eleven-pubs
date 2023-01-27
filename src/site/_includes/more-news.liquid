@@ -13,7 +13,7 @@
       <turbo-frame id="posts-{{pagination.pageNumber}}">
         <div class="grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
           <!-- CARD LOOP -->
-          {% for post in more-posts limit:30 offset:9 %}
+          {% for post in collections.strictPosts limit:30 offset:9 %}
           <div>
             <a data-turbo="false" href="{{ post.url }}" class="block mt-4">
               <p class="text-xl font-semibold text-gray-900">{{ post.data.title }}</p>

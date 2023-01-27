@@ -154,11 +154,22 @@ module.exports = function (eleventyConfig) {
       return b.date - a.date
     });
   });
+
+  //burried posts
   eleventyConfig.addCollection("burriedPosts", function(collectionApi) {
     return collectionApi.getFilteredByTag("hash-bury").sort(function(a,b){
       return b.date - a.date
     });
   });
+  // An eleventy collection that excludes posts based on tag
+  eleventyConfig.addCollection("strictPosts", function(collectionApi) {
+    return collectionApi.getFilteredByTag("hash-post").filter(function(post) {
+        return Boolean(!post.data.tags.includes("hash-bury"));
+      }).sort(function(a,b){
+        return b.date - a.date
+    });
+  });
+
   //**Optimizations**
 
   //minify html
