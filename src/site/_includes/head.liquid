@@ -13,8 +13,15 @@
   <meta name="twitter:creator" content="@daiglobal">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ title }} &middot; {% if page.url contains '/unburdened-podcast' or page.url contains '/unburdened-season-1' %}Our cut on global health issues that go beyond healthcare.{% else %} {{ site.description }} {% endif %}">
+  {% if image != blank %}
+    <meta name="twitter:image" content="{{image}}">
+    <meta property="og:image" content="{{image}}">  
+  {% else %}
+    
+  {% endif %}
   <meta name="twitter:image" content="https://og-image-testing-bryanschuetz.vercel.app/api/param?title={{title | url_encode | default: "https://www.dai.com/uploads/social-image.jpg" }}">
   <meta property="og:image" content="https://og-image-testing-bryanschuetz.vercel.app/api/param?title={{title | url_encode | default: "https://www.dai.com/uploads/social-image.jpg" }}">
+  
   <title>{{ title }} &middot; {{ site.title }}</title>
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.url }}/assets/style.css?v=42">
