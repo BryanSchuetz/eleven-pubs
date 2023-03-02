@@ -12,4 +12,5 @@ permalink: "post-api/{{ post.data.title | slugify }}.json"
         "url": "{{ post.url }}"
       }
   ],
-  "content": {{ post.templateContent | strip_html | strip_newlines | strip | json  }}
+  "content": {{ post.templateContent | strip_html | strip_newlines | strip | json }}
+}
