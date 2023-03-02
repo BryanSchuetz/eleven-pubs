@@ -24,9 +24,9 @@ module.exports = function (eleventyConfig) {
 
   //**Performance **
   /* Ignore posts—for faster local builds */
-  if (process.env.ELEVENTY_ENV === "dev") {
-    eleventyConfig.ignores.add("./src/site/articles");
-  }
+  // if (process.env.ELEVENTY_ENV === "dev") {
+  //   eleventyConfig.ignores.add("./src/site/articles");
+  // } 
 
   //**Plugins**
   eleventyConfig.addPlugin(timeToRead, {

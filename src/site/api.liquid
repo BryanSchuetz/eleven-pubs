@@ -1,0 +1,14 @@
+---
+title: "JSON API"
+permalink: '/api.json'
+---
+{
+  "posts": [
+    {% for post in collections.justPosts %}
+      {
+        "title": "{{ post.data.title }}",
+        "url": "{{ post.url }}"
+      }
+    {% endfor %}
+  ]
+}
