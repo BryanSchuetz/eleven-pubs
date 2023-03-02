@@ -4,10 +4,10 @@ permalink: '/api.json'
 ---
 {
   "posts": [
-    {% for post in collections.justPosts %}
+    {% for post in collections.hash-post %}
       {
         "title": "{{ post.data.title }}",
-        "url": "{{ post.url }}"
+        "url": "https://dai-global-developments.com/post-api/{{ post.data.title | slugify }}.json",
       }
     {% endfor %}
   ]

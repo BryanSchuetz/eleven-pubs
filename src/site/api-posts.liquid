@@ -1,0 +1,16 @@
+---
+pagination:
+  data: collections.hash-post
+  size: 1
+  alias: post
+permalink: "post-api/{{ post.data.title | slugify }}.json"
+---
+{
+  "data": [
+      {
+        "title": "{{ post.data.title }}",
+        "url": "{{ post.url }}"
+      }
+  ],
+  "content": {{ post.templateContent | strip_html | strip_newlines | strip | json }}
+}
