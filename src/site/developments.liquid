@@ -45,7 +45,7 @@ pagination:
   //initialize autocomplete on search input (ID selector must match)
   autocomplete('#aa-search-input',
     { hint: false, debug: true, autoselect: false, keyboardShortcuts: ['s', '/'] }, {
-      source: autocomplete.sources.hits(index, { hitsPerPage: 10 }),
+      source: autocomplete.sources.hits,(index, { hitsPerPage: 10, facetFilters: ['title:-DAI Blogs', 'title:-Developments'] }),
       //value to be displayed in input control after user's suggestion selection
       displayKey: 'my_attribute',
       //hash of templates used when rendering dataset
