@@ -45,10 +45,11 @@ pagination:
 <script>
   var client = algoliasearch("L03CYX2AZ5", "e5b8a9fea3d0f6e87fc6be04fb6fd4a8");
   var index = client.initIndex('netlify_5dd4f337-db5a-46f6-a6a6-1481474a509c_master_all');
+  
   //initialize autocomplete on search input (ID selector must match)
   autocomplete('#aa-search-input',
     { hint: false, debug: true, autoselect: false, keyboardShortcuts: ['s', '/'] }, {
-      source: autocomplete.sources.hits(index, { hitsPerPage: 10 }),
+      source: autocomplete.sources.hits(index, { hitsPerPage: 10, facetFilters: ['title:-DAI Blogs', 'title:-Developments'] }),
       //value to be displayed in input control after user's suggestion selection
       displayKey: 'my_attribute',
       //hash of templates used when rendering dataset
