@@ -17,6 +17,11 @@
   background-image: url(/assets/images/unburdened-banner.jpg);
   background-position: center;
 }
+.blogs-header.practice-partnership{
+  background-image: url(/assets/images/practice-of-partnerships-background.jpg);
+  background-position: left;
+  background-size: cover;
+}
 .blog-banner{
   margin-top: 65px;
 }
