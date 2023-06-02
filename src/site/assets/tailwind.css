@@ -413,3 +413,14 @@ div.kg-gallery-image img{
   background-position: center;
   background-size: cover;
 }
+
+@media only screen and (max-width: 1200px) {
+  .practice-episode-header{
+    background: url('/assets/images/scaled-practice-background.jpg');
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .practice-episode-header{
+    background: url('/assets/images/scaled-header-logo-practice.jpg');
+  }
+}

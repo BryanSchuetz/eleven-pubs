@@ -37,20 +37,15 @@ title: Practice of Partnership Podcast
   </div>
 <div class="bg-[#F7F7F7] ">
   <div class="max-w-4xl mx-auto py-8 sm:py-24">
-    <h2 class="mt-10 text-4xl">We all know health issues weigh us down</h2>
-      <hr class="daiBar mb-4 border-y-4 w-14 border-daiDark">
     <div class="container max-w-4xl">
-      <p>And when we think about health, we probably think about our individual health issues and wellbeing, or a disease we’ve had, or past surgery, or some other personal burden. </p>
-      <p>But in fact, much of what ails us is connected with the world around us. Where we live, our environment, our communities, our relationships—even our social status deeply affects our health and wellbeing, in many cases including our life expectancy. </p>
-      <p>Bad environments, poor relationships, marginalization, and poverty weigh down our health and shape our lives. Have you ever felt crippled by financial instability or poverty? Choked by polluted air or the garbage on your streets? Have you been effectively cut off from health services because of your race, class, or gender? Perhaps you have had to flee your home because of conflict or violence…</p>
-      <p>What can we do about these things? How can we collectively live healthier lives and alleviate some of these factors weighing on our health? Join us this October as we kick off Unburdened, DAI’s podcast about what it really takes to shape a healthier, more livable world.  </p>
+      <p><strong>The Practice of Partnership</strong> is a podcast about how local engagement is the cornerstone of sustainable, high-impact development. Development is inherently local and collaborative – local leadership and participation are essential. In this series, we explore the key ingredients of successful local partnerships, and most importantly hear from local partners themselves about how the relationships they have forged have helped to drive economic growth and development. As the old African proverb says, if you want to go far, go together.</p>
     </div>
   </div>
 </div>
 <!-- PODCAST ONE -->
 <div class="bg-daiLightGray">
   <div class="max-w-7xl mx-auto py-16 sm:py-24">
-  <div class="back-box border-[16px] border-white h-[1600px] xl:h-[1750] w-[60%] z-0 absolute ml-10">
+  <div class="back-box border-[16px] border-white h-[400px] xl:h-[650px] w-[60%] z-0 absolute ml-10">
       <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">Season 01</span> <span class="font-normal">Episodes</span></h2>
       <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
       <p class="mt-2 ml-8">Please listen to the episodes in order.</p>
@@ -64,9 +59,9 @@ title: Practice of Partnership Podcast
             </h3>
             <!-- PODCAST PREVIEW -->
             <div class="post-preview bg-white p-8">
-              <h2 class="text-3xl">Can gender equality make us healthier?</h2>
+              <h2 class="text-3xl">Partnerships matter for growth</h2>
               <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
-              <p class="mb-8">Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?</p>
+              <p class="mb-8">Why do effective partnerships between development agencies and local entities matter? Because they offer a rich source of innovation, a credible pathway for sustainable change, and the ability to implement solutions at scale.</p>
               
               <button onclick="Turbo.visit('/unburdened-season-1/episode-1')" type="button" class="daiButtons my-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
             </div>
@@ -74,34 +69,10 @@ title: Practice of Partnership Podcast
         </div>
         <div class="z-10">
           {% assign default-feature = '/assets/images/default-feature.png' %}
-          <div class="container h-full" style="background: url('/assets/images/scaled-episode-1-banner.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+          <div class="container h-full practice-episode-header" style="background-repeat: no-repeat; background-position: left; background-size: cover;">
           </div>
         </div>
       </div>
     </div>
   </div> 
-</div>
-<!-- POST OTHERS -->
-<div class="bg-daiLightGray pb-16">
-  <div class="grid grid-cols-2 gap-6 content-end max-w-5xl mx-auto bg-daiLightGray">
-    {% assign podcasts = podcast.episodes %}
-    {% assign postOthers = collections.featuredPosts %}
-    {% for podcast in podcasts offset:1 %}
-    <div class="bg-white z-10">
-      <div class="bg-[#557D91]">
-        <h3 class="uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">EPISODE #{{podcast.number}}</h3>
-      </div>
-      <div class="feature-image aspect-square" style="background: url('/assets/images/scaled-episode-{{podcast.number}}-banner.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
-      </div>
-      <div class="post-preview bg-white p-8 flex flex-col min-h-[500px]">
-        <h2 class="text-3xl">{{ podcast.title }}</h2>
-        <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
-        <div class="flex-grow">
-          <p class="mb-8">{{ podcast.description }}</p>
-        </div>
-        <button onclick="Turbo.visit('/unburdened-season-1/episode-{{podcast.number}}')" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
-      </div>
-    </div>
-    {% endfor %}
-</div>    
 </div>
