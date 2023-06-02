@@ -17,6 +17,11 @@
   background-image: url(/assets/images/unburdened-banner.jpg);
   background-position: center;
 }
+.blogs-header.practice-partnership{
+  background-image: url(/assets/images/practice-of-partnerships-background.jpg);
+  background-position: left;
+  background-size: cover;
+}
 .blog-banner{
   margin-top: 65px;
 }
@@ -407,4 +412,15 @@ div.kg-gallery-image img{
   background-image: url('/assets/images/scaled-episode-5-banner.jpg');
   background-position: center;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .practice-episode-header{
+    background: url('/assets/images/scaled-practice-background.jpg');
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .practice-episode-header{
+    background: url('/assets/images/scaled-header-logo-practice.jpg');
+  }
 }
