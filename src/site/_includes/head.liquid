@@ -16,9 +16,9 @@
   <meta name="twitter:site" content="@daiglobal">
   <meta name="twitter:creator" content="@daiglobal">
   <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ title }} &middot; {% if page.url contains '/unburdened-podcast' or page.url contains '/unburdened-season-1' %}Our cut on global health issues that go beyond healthcare.{% else %} {{ site.description }} {% endif %}">
+  <meta name="twitter:description" content="{{ title }} &middot; {% if page.url contains '/unburdened-podcast' or page.url contains '/unburdened-season-1' %}Our cut on global health issues that go beyond healthcare. {% elsif page.url contains '/practiceofpartnership-podcast' %}The Practice of Partnership is a podcast about how local engagement is the cornerstone of sustainable, high-impact development.{% else %} {{ site.description }} {% endif %}">
   {% if image != blank %}
-<meta name="twitter:image" content="{% if image contains 'unsplash' %}{{image}}{% else %}https://dai-global-developments.com{{image}}{% endif %}">
+    <meta name="twitter:image" content="{% if image contains 'unsplash' %}{{image}}{% else %}https://dai-global-developments.com{{image}}{% endif %}">
     <meta property="og:image" content="{% if image contains 'unsplash' %}{{image}}{% else %}https://dai-global-developments.com{{image}}{% endif %}">  
   {% else %}
     
