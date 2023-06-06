@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --plyr-color-main: #404d59;
+}
+
 .base-container{
   color: #404d59;
 }
@@ -91,7 +95,10 @@
 	height: 100% !important;
 	width: 100% !important;
 }
-
+div.desc iframe.pop-iframe{
+  height: 125px !important;
+  aspect-ratio: 4/3;
+}
 .prose blockquote{
   width: 100vw;
   position: relative;
@@ -388,6 +395,11 @@ div.kg-gallery-image img{
 .author-pic.i4{
   left: -30%;
 } 
+.episode-banner-pop{
+  background-image: url('/assets/images/scaled-practice-background.jpg');
+  background-position: center;
+  background-size: cover;
+}
 .episode-banner-1{
   background-image: url('/assets/images/scaled-episode-1-banner.jpg');
   background-position: center;

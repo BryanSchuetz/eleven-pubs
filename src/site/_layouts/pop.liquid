@@ -1,0 +1,67 @@
+---
+layout: base.liquid
+---
+<script src="https://kit.fontawesome.com/a7a8a2a44a.js" crossorigin="anonymous"></script>
+{%- for item in pagination.items -%}
+<div class="pt-[65px] sm:pt-[112px] lg:pt-[129px]">
+  <div class="episode-banner-pop min-h-[400px]">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl pl-[4rem] pt-[3rem]">
+        <h1 class="text-4xl tracking-tight font-bold text-daiDark sm:text-5xl md:text-6xl pr-[20px]">{{ item.title }}</h1>
+      <hr class="daiBar border-y-4 lg:border-y-[6px] w-14 lg:w-[6rem] border-daiDark">
+      <span class="isolate inline-flex rounded-md shadow-sm mt-8">
+        <button onclick="window.open('https://feeds.soundcloud.com/users/soundcloud:users:1167420997/sounds.rss')" type="button" class="relative inline-flex items-center rounded-l-[4px] border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-daiLinks hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-solid fa-rss w-4 h4 mr-1 mb-[0.15rem]"></i> RSS</button>
+        <button onclick="window.open('https://podcasts.apple.com/us/podcast/practice-of-partnership/id1691100695')" type="button" class="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-daiLinks hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-brands fa-apple w-4 h4 mr-1 mb-[0.15rem]"></i> Apple</button>
+        <button onclick="window.open('https://open.spotify.com/show/6o64ScNzsENUJBwx7hqvnX')" type="button" class="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-daiLinks hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-brands fa-spotify w-4 h4 mr-1 mb-[0.15rem]"></i> Spotify</button>
+        <button onclick="window.open('https://www.stitcher.com/show/1071846')" type="button" class="relative -ml-px inline-flex items-center rounded-r-[4px] border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-daiLinks hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-solid fa-podcast w-4 h4 mr-1 mb-[0.15rem]"></i> Stitcher</button>
+      </span>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 bg-daiLightGray">
+    <div class="bg-daiGray02 grid place-items-center lg:place-items-start">
+      <a href="/practiceofpartnership-podcast"><img src="/assets/images/pop-album-art.jpg" alt=""></a>
+      <div class="prose p-4 lg:p-8 text-white">
+        <h3 class="text-white">OUR GUESTS</h3>
+        <ul class="list-none ml-0 pl-0">
+          {% for guest in item.guests %}
+          <li><strong class="text-white">{{guest.name}}</strong><p class="mt-0 mb-0 h leading-4">{{guest.title}}</p></li>        
+          {% endfor %}
+        </ul>
+        <hr>
+        <h3 class="text-white">OUR CONTRIBUTORS</h3>
+        <ul class="list-none ml-0 pl-0">
+          <li>
+            <strong class="text-white">Host & Producer</strong>
+            <p class="mt-0 mb-0 h leading-4">Megan Howe</p>
+            <p class="mt-0 mb-0 h leading-4">Global Health Communications Advisor, DAI</p>
+          </li>
+          <li>
+            <strong class="text-white">Artwork & Brand Design</strong>
+            <p class="mt-0 mb-0 h leading-4">Kellie Dubois</p>
+            <p class="mt-0 mb-0 h leading-4">Art Director, DAI</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="lg:col-span-2 bg-daiLightGray p-8 grid place-items-center h-full">
+      <div class="prose h-full grid">
+        <div class="desc">
+          <div style="position:relative;">{{item.embed}}
+          <h2 class="text-2xl tracking-tight font-bold text-daiDark sm:text-3xl md:text-4xl ">{{ item.title }}</h2>
+          <hr class="daiBar border-y-4 lg:border-y-[6px] w-14 lg:w-[6rem] border-daiDark mb-4">
+          {{item.fulldesc | markdownify }}
+          <ul class="">
+            {% for link in item.notes %}
+              <li><a href="{{link.link}}">{{link.text}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="content-end">
+          <p class="align-bottom">You can listen to UNBURDENED in many places: Right here on our website, on <a href="https://podcasts.apple.com/us/podcast/unburdened/id1647023176">Apple Podcasts</a>, <a href="https://open.spotify.com/show/65FND64bWAlO16alNrA4yG?si=f7dac8786306462c">Spotify</a>, or the <a href="https://feeds.soundcloud.com/users/soundcloud:users:1167420997/sounds.rss">podcatcher</a> of your choice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%- endfor -%}
