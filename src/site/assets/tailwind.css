@@ -396,9 +396,6 @@ div.kg-gallery-image img{
   left: -30%;
 } 
 .episode-banner-pop{
-  background-image: url('/assets/images/scaled-practice-background.jpg');
-  background-position: center;
-  background-size: cover;
 }
 .episode-banner-1{
   background-image: url('/assets/images/scaled-episode-1-banner.jpg');

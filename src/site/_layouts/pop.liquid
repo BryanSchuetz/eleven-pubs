@@ -6,12 +6,12 @@ image: '/assets/images/pop-album-art.jpg'
 <script src="https://kit.fontawesome.com/a7a8a2a44a.js" crossorigin="anonymous"></script>
 {%- for item in pagination.items -%}
 <div class="pt-[65px] sm:pt-[112px] lg:pt-[129px]">
-  <div class="episode-banner-pop min-h-[400px]">
+  <div class="episode-banner-pop bg-daiDark">
     <div class="max-w-7xl mx-auto">
       <div class="max-w-2xl pl-[4rem] pt-[3rem]">
-        <h1 class="text-4xl tracking-tight font-bold text-daiDark sm:text-5xl md:text-6xl pr-[20px]">{{ item.title }}</h1>
-      <hr class="daiBar border-y-4 lg:border-y-[6px] w-14 lg:w-[6rem] border-daiDark">
-      <span class="isolate inline-flex rounded-md shadow-sm mt-8">
+        <span class="text-white">EPISODE: #{{item.number}}</span>
+        <h1 class="text-2xl tracking-tight font-bold text-white sm:text-3xl md:text-4xl pr-[20px] mb-0">{{ item.title }}</h1>
+      <span class="isolate inline-flex rounded-md shadow-sm mt-8 mb-8">
         <button onclick="window.open('https://feeds.soundcloud.com/users/soundcloud:users:1167420997/sounds.rss')" type="button" class="relative inline-flex items-center rounded-l-[4px] border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-daiLinks hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-solid fa-rss w-4 h4 mr-1 mb-[0.15rem]"></i> RSS</button>
         <button onclick="window.open('https://podcasts.apple.com/us/podcast/practice-of-partnership/id1691333937')" type="button" class="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-daiLinks hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-brands fa-apple w-4 h4 mr-1 mb-[0.15rem]"></i> Apple</button>
         <button onclick="window.open('https://open.spotify.com/show/6o64ScNzsENUJBwx7hqvnX')" type="button" class="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-daiLinks hover:bg-gray-50 focus:z-10 focus:border-daiGray02 focus:outline-none focus:ring-1 focus:ring-daiGray02"><i class="fa-brands fa-spotify w-4 h4 mr-1 mb-[0.15rem]"></i> Spotify</button>
@@ -20,7 +20,6 @@ image: '/assets/images/pop-album-art.jpg'
       </div>
     </div>
   </div>
-  <div class="bg-daiDark h-4 w-[100%]"></div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 bg-daiLightGray">
     <div class="bg-daiGray02 grid place-items-center lg:place-items-start">
       <a href="/practiceofpartnership-podcast"><img src="/assets/images/pop-album-art.jpg" alt=""></a>
