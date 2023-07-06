@@ -18,7 +18,37 @@ episodes:
         title: Director, Sustainable Business Group, DAI
       - name: Victor Basta
         title: CEO, DAI Magister 
-
+  - number: 2
+    title: 'How Vietnam is leveraging partnerships in pursuit of net zero.'
+    description: |
+      Following two decades of rapid growth, Vietnam is now the world’s 19th largest greenhouse gas emitter. How can the country pursue its growth goals and still reach net zero? 
+    fulldesc: |
+      By any measure, Vietnam is a huge success story. In the space of just 20 years, from 2000 to 2020, the country’s GDP grew from US$31 billion to $346 billion. But alongside these substantial achievements, carbon emissions have grown sevenfold since 2000, making Vietnam the world’s 19th largest carbon emitter. The government has pledged the country would reach net zero by 2050, but Vietnam faces increasing challenges around reducing fossil fuel-based energy, transportation, and industrial processing. In May 2023, the government approved the Power Development Plan 8, which lays out how it will reach its green energy goals. Wind and solar power, which Vietnam hopes will account for 60 percent of its energy generation by 2050, are crucial parts of the plan, but to put that plan into place the government will need to attract billions in investment. So it’s charting a path to change its future, through partnership. 
+    notes:
+      - text: 'World Bank: Vietnam Country Climate and Development Report'
+        link: https://openknowledge.worldbank.org/server/api/core/bitstreams/23fed1f8-6260-574a-9e2d-f4d44fb94fa3/content
+      - text: Climate Watch Data Vietnam 
+        link: https://www.climatewatchdata.org/countries/VNM?end_year=2019&start_year=1990
+      - text: EU’s Corporate Sustainability Reporting Directive 
+        link: https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en
+      - text: 'Vietnam’s true carbon threat: its kingdom of 50m motorbikes'
+        link: https://asia.nikkei.com/Spotlight/Comment/Vietnam-s-true-carbon-threat-its-kingdom-of-50m-motorbikes 
+      - text: Vietnam firm launches country’s largest solar far amid renewables drive
+        link: https://www.reuters.com/article/vietnam-energy-solar-idUSL4N2H31A2
+      - text: Vietnam Government Approves Power Development Plan 8
+        link: https://www.vietnam-briefing.com/news/vietnam-power-development-plan-approved.html/
+      - text: Vietnam has a poor environmental scorecard
+        link: https://e.vnexpress.net/news/news/vietnam-has-poor-environmental-scorecard-4111982.html#:~:text=Vietnam%2C%20one%20of%20the%20highest,percent%20between%202020%20and%202030.&text=Worsening%20air%20pollution%20in%20Hanoi,repeatedly%20made%20headlines%20in%202019.
+    embed: '<audio id="player" ><source src="https://dai-assets.s3.amazonaws.com/podcasts/partnership-2.mp3" type="audio/mp3" /></audio>'
+    guests:
+      - name: Ella Hoxha
+        title: Chief of Party, Vietnam VUES, DAI
+      - name: Mai Nguyen
+        title: Project Manager, RCEE NIRAS
+      - name: Dong Thi Minh Ha
+        title: Energy Efficiency and Sustainable Development Department, Ministry of Industry and Trade Vietnam
+      - name: Trung Pham
+        title: Chief Financial Officer, Dat Bikes 
 
 
     
