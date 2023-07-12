@@ -422,6 +422,21 @@ div.kg-gallery-image img{
   background-position: center;
   background-size: cover;
 }
+.filtered2 {
+  filter: hue-rotate(15deg);
+}
+.filtered3 {
+  filter: hue-rotate(25deg);
+}
+.filtered4 {
+  filter: hue-rotate(35deg);
+}
+.filtered5 {
+  filter: hue-rotate(45deg);
+}
+.filtered6 {
+  filter: hue-rotate(80deg);
+}
 
 @media only screen and (max-width: 1200px) {
   .practice-episode-header{
