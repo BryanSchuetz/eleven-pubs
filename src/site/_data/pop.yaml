@@ -49,6 +49,34 @@ episodes:
         title: Energy Efficiency and Sustainable Development Department, Ministry of Industry and Trade Vietnam
       - name: Trung Pham
         title: Chief Financial Officer, Dat Bikes 
-
+  - number: 3
+    title: 'How partnership can help local economies and energy corporates win big.'
+    description: |
+      “Place-based economics” lies at the center of an emerging order, which encourages businesses to value localised suppliers and supply chains rather than relying exclusively on highly globalized ones. Can local partnership in business advance international development objectives? 
+    fulldesc: |
+      A global shift is underway. The trend toward de-globalization, influenced by our climate crisis, the pandemic experience, Russia’s invasion of Ukraine, and growing attention to dislocation and inequalities within national economies has caused many countries to turn inward. Advocates of free trade as the answer to global growth face increasingly tough questions. 
+      
+      “Place-based economics” lies at the center of an emerging order, which encourages businesses to reassess the value of localised suppliers and supply chains rather than relying exclusively on highly globalized ones. It also puts business resiliency on par with efficiency. In other words, it acknowledges that chasing profit solely by maximizing efficiencies puts businesses at risk in times of shock or uncertainty.
+      
+      Local options and local content can make for better, stronger, more resilient networks. That’s the same discussion many development practitioners are having now. So, let’s join the conversation between international development and global business. 
+    notes:
+      - text: 'World Trade Organization: local content definition'
+        link: https://www.wto.org/english/thewto_e/glossary_e/local_content_measure_e.htm#:~:text=Requirement%20that%20the%20investor%20purchase,incorporation%20in%20the%20investor%27s%20product
+      - text: "World Bank: Mozambique Economic Update: Growth Slows Amid Challenging Global Conditions and Rising Fiscal Risks"
+        link: https://www.worldbank.org/en/country/mozambique/publication/mozambique-economic-update-april-2016
+      - text: "Chatham House: How can Mozambique manage its debt crisis?"
+        link: https://www.chathamhouse.org/2016/05/how-can-mozambique-manage-its-debt-crisis
+      - text: "World Bank: Mozambique Economic Update"
+        link: https://documents1.worldbank.org/curated/en/099550103092314496/pdf/IDU0a06fd8fc08d5604d740941803b1a33a5bdf6.pdf 
+    embed: '<audio id="player" ><source src="https://dai-assets.s3.amazonaws.com/podcasts/partnership-3.mp3" type="audio/mp3" /></audio>'
+    guests:
+      - name: Patrick Henry
+        title: Vice President and Head of the Sustainable Business Group, DAI
+      - name: Barbara Habib
+        title: Director, MozUp, Mozambique 
+      - name: Natasha Gaskin-Peters
+        title: Director, Centre for Local Business Development, Guyana
+      - name: Lancelot Gordon
+        title: Business Development Manager, Atlantic Marine Supply, Guyana 
 
     

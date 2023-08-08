@@ -93,7 +93,7 @@ image: /assets/images/pop-album-art.jpg
         <div class="flex-grow">
           <p class="mb-8">{{ podcast.description }}</p>
         </div>
-        <button onclick="window.open('/practiceofpartnership-season-1/episode-2')" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+        <button onclick="window.open('/practiceofpartnership-season-1/episode-{{podcast.number}}')" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
       </div>
     </div>
     {% endfor %}
