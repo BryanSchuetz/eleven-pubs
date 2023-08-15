@@ -21,6 +21,11 @@
   background-image: url(/assets/images/unburdened-banner.jpg);
   background-position: center;
 }
+.blogs-header.unified{
+  background-image: url(/assets/images/unified-header.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .blogs-header.practice-partnership{
   background-image: url(/assets/images/practice-of-partnerships-background.jpg);
   background-position: left;

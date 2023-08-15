@@ -14,6 +14,9 @@ module.exports = {
         daiPurple: "#644C85",
         daiLinks: "#1e7ab3"
       },
+      screens: {
+        'mediumish': '1166px',
+      }
     }
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

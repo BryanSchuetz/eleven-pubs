@@ -1,0 +1,139 @@
+---
+permalink: all-podcasts.html
+layout: base.liquid
+description: A Unified Podcast Index Page
+title: All Podcasts
+---
+<script src="https://kit.fontawesome.com/a7a8a2a44a.js" crossorigin="anonymous"></script>
+<div class="base-container mt-[65px] lg:mt-[128px]">
+  <!-- BLOGS HEADER -->
+  <div class="blogs-header unified">
+    <div class="pb-6">
+      <div class="mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-around items-center md:min-h-[400px]"> 
+      </div>
+      <div class="mt-16 w-full max-w-xs">
+          <div class="mt-1.5 relative blog-search">
+            <div>
+              <div class="mt-1 w-full">
+                <p class="mt-5 text-2xl text-daiDark italic"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- END Podcast HEADER -->
+  <!-- PODCAST SEASON ONE PRACTICE OF PARTNERSHIP -->
+  <div class="bg-daiLightGray">
+  <div class="max-w-7xl mx-auto py-16 sm:py-24">
+  <div class="back-box border-[16px] border-white h-[1600px] xl:h-[1750] w-[60%] z-0 absolute ml-10">
+      <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">Season 01</span> <span class="font-normal normal-case hidden mediumish:inline">Practice of Partnership</span></h2>
+      <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
+      <p class="mt-2 ml-8">Please listen to the episodes in order.</p>
+  </div>
+    <div class="mt-52 sm:mt-40">
+      <div class="grid grid-cols-2 gap-0 max-w-7xl mx-auto ">
+        <div class="bg-[#557D91] z-10">
+          <div class="">
+            <h3 class="text-2xl uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">
+              EPISODE #1
+            </h3>
+            <!-- PODCAST PREVIEW -->
+            <div class="post-preview bg-white p-8">
+              <h2 class="text-3xl">Partnerships matter for growth</h2>
+              <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
+              <p class="mb-8">Why do effective partnerships between development agencies and local entities matter? Because they offer a rich source of innovation, a credible pathway for sustainable change, and the ability to implement solutions at scale.</p>
+              
+              <button onclick="window.open('/practiceofpartnership-season-1/episode-1')" type="button" class="daiButtons my-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+            </div>
+          </div>
+        </div>
+        <div class="z-10">
+          {% assign default-feature = '/assets/images/default-feature.png' %}
+          <div class="container h-full practice-episode-header" style="background-repeat: no-repeat; background-position: left; background-size: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<div class="bg-daiLightGray pb-16">
+  <div class="grid grid-cols-2 gap-6 content-end max-w-5xl mx-auto bg-daiLightGray">
+    {% assign podcasts = pop.episodes %}
+    {% for podcast in podcasts offset:1 %}
+    <div class="bg-white z-10">
+      <div class="bg-[#557D91]">
+        <h3 class="uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">EPISODE #{{podcast.number}}</h3>
+      </div>
+      <div class="feature-image aspect-square filtered{{podcast.number}}" style="background: url('/assets/images/pop-album-art-no-logo.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      </div>
+      <div class="post-preview bg-white p-8 flex flex-col min-h-[500px]">
+        <h2 class="text-3xl">{{ podcast.title }}</h2>
+        <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
+        <div class="flex-grow">
+          <p class="mb-8">{{ podcast.description }}</p>
+        </div>
+        <button onclick="window.open('/practiceofpartnership-season-1/episode-{{podcast.number}}')" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+      </div>
+    </div>
+    {% endfor %}
+</div>    
+</div>
+<!-- PODCAST SEASON ONE UNBURDENED -->
+<div class="bg-daiLightGray">
+  <div class="max-w-7xl mx-auto py-16 sm:py-24">
+  <div class="back-box border-[16px] border-white h-[1600px] xl:h-[1750] w-[60%] z-0 absolute ml-10">
+      <h2 class="mt-10 ml-8 text-4xl uppercase"><span class="font-bold">Season 01</span> <span class="font-normal hidden mediumish:inline ">Unburdened</span></h2>
+      <hr class="daiBar ml-8 border-y-4 w-14 border-daiDark">
+      <p class="mt-2 ml-8">Please listen to the episodes in order.</p>
+  </div>
+    <div class="mt-52 sm:mt-40">
+      <div class="grid grid-cols-2 gap-0 max-w-7xl mx-auto ">
+        <div class="bg-[#557D91] z-10">
+          <div class="">
+            <h3 class="text-2xl uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">
+              EPISODE #1
+            </h3>
+            <!-- PODCAST PREVIEW -->
+            <div class="post-preview bg-white p-8">
+              <h2 class="text-3xl">Can gender equality make us healthier?</h2>
+              <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
+              <p class="mb-8">Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?</p>
+              
+              <button onclick="Turbo.visit('/unburdened-season-1/episode-1')" type="button" class="daiButtons my-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+            </div>
+          </div>
+        </div>
+        <div class="z-10">
+          {% assign default-feature = '/assets/images/default-feature.png' %}
+          <div class="container h-full" style="background: url('/assets/images/scaled-episode-1-banner.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<!-- POST OTHERS -->
+<div class="bg-daiLightGray pb-16">
+  <div class="grid grid-cols-2 gap-6 content-end max-w-5xl mx-auto bg-daiLightGray">
+    {% assign podcasts = podcast.episodes %}
+    {% assign postOthers = collections.featuredPosts %}
+    {% for podcast in podcasts offset:1 %}
+    <div class="bg-white z-10">
+      <div class="bg-[#557D91]">
+        <h3 class="uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">EPISODE #{{podcast.number}}</h3>
+      </div>
+      <div class="feature-image aspect-square" style="background: url('/assets/images/scaled-episode-{{podcast.number}}-banner.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      </div>
+      <div class="post-preview bg-white p-8 flex flex-col min-h-[500px]">
+        <h2 class="text-3xl">{{ podcast.title }}</h2>
+        <hr class="daiBar border-y-4 w-14 mb-4 border-daiDark">
+        <div class="flex-grow">
+          <p class="mb-8">{{ podcast.description }}</p>
+        </div>
+        <button onclick="Turbo.visit('/unburdened-season-1/episode-{{podcast.number}}')" type="button" class="daiButtons my-8 max-w-[257px] items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Listen & Show Notes</button>
+      </div>
+    </div>
+    {% endfor %}
+</div>    
+</div>
