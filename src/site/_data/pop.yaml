@@ -92,8 +92,8 @@ episodes:
       
     embed: '<audio id="player" ><source src="https://media.rss.com/practice-of-partnership/2023_09_06_12_06_50_d46f48b1-8008-4379-9cc9-b607093e5cc4.mp3" type="audio/mp3" /></audio>'
     guests:
-      - name: Chris LylePrincipal
-        title: CrossBoundary
+      - name: Chris Lyle
+        title: Principal, CrossBoundary
       - name: Mark Rostal
         title: Chief of Party, DAI 
       - name: Ramzi Farah
