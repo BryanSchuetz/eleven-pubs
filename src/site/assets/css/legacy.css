@@ -251,7 +251,7 @@ ul.dropdown {
       width: 225px; } }
   ul.dropdown li {
     float: left;
-    clear: right;
+    /* clear: right; Causing problems in mobile Safari */
     width: 100%;
     margin: 0;
     border-bottom: 1px solid rgba(68, 75, 96, 0.05); }
