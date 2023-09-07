@@ -36,6 +36,7 @@ And wh…</itunes:subtitle>
           <link>https://dai-global-developments.com/unburdened-podcast</link>
         </image>
         <itunes:category text="Government"/>
+        <podcast:txt purpose="VERIFY">RSSVERIFY</podcast:txt>
         <item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/1366196551</guid>
       <title>Where do we go from here?</title>

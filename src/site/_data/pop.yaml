@@ -78,5 +78,27 @@ episodes:
         title: Director, Centre for Local Business Development, Guyana
       - name: Lancelot Gordon
         title: Business Development Manager, Atlantic Marine Supply, Guyana 
+  - number: 4
+    title: 'Where there are no banks – how equity partnerships are planting seeds for economic recovery in Lebanon'
+    description: |
+      “Place-based economics” lies at the center of an emerging order, which encourages businesses to value localised suppliers and supply chains rather than relying exclusively on highly globalized ones. Can local partnership in business advance international development objectives? 
+    fulldesc: |
+      Crisis upon crisis has beset the country of Lebanon, home to hundreds of thousands of Syrian refugees, Palestinians, diverse religious communities, and an even more diverse political landscape. Political failures have repeatedly brought the country to halt, most recently in 2020 when the country’s financial sector collapsed. Since then, financial and business innovation has been helping to bring the country back from the brink. A new cadre of investors is catalyzing economic growth and creating an entirely new financial system in the process. On this episode, we look at how investment bankers and venture capitalists are planting the seeds of Lebanon’s recovery through partnership.
+    notes:
+      - text: 'World Bank Report Lebanon'
+        link: https://www.worldbank.org/en/country/lebanon/overview#2
+      - text: "The State of Digital Investments in MENA"
+        link: https://www.arabnet.me/english/business-intelligence/the-state-of-digital-investments-in-mena-2019-2021
+      
+    embed: '<audio id="player" ><source src="https://media.rss.com/practice-of-partnership/2023_09_06_12_06_50_d46f48b1-8008-4379-9cc9-b607093e5cc4.mp3" type="audio/mp3" /></audio>'
+    guests:
+      - name: Chris LylePrincipal
+        title: CrossBoundary
+      - name: Mark Rostal
+        title: Chief of Party, DAI 
+      - name: Ramzi Farah
+        title: Managing Director, Razor Capital
+      - name: Nicolas Photiades
+        title: Partner, Orion Financial Solutions
 
     
