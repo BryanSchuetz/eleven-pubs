@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
-      <channel>
+  <channel>
         <atom:link href="https://dai-global-developments.com/assets/podcast.rss" rel="self" type="application/rss+xml"/>
         <atom:link href="https://dai-global-developments.com/assets/podcast.rss" rel="next" type="application/rss+xml"/>
         <title>Unburdened</title>
@@ -165,5 +165,5 @@ The GINI Index, World Bank: https://data.worldbank.org/indicator/SI.POV.GINI</de
       <enclosure type="audio/mpeg" url="https://feeds.soundcloud.com/stream/1348880188-bryan-schuetz-575189913-can-gender-equality-make-us-healthier.mp3" length="19499162"/>
       <itunes:image href="https://i1.sndcdn.com/artworks-gnOpGbrojsdEK2FC-KydyDg-t3000x3000.jpg"/>
     </item>
-      </channel>
-    </rss>
+  </channel>
+  </rss>
