@@ -100,5 +100,25 @@ episodes:
         title: Managing Director, Razor Capital
       - name: Nicolas Photiades
         title: Partner, Orion Financial Solutions
-
-    
+  - number: 5
+    title: 'Accountable, transparent, and participatory – how local partnership in Colombia is strengthening democracy'
+    description: |
+      Colombia’s deep-seated democratic traditions have been put to the test by decades of armed conflict. Over the past 50 years, thousands of people have been murdered and millions affected by violence.
+    fulldesc: |
+      Colombia’s deep-seated democratic traditions have been put to the test by decades of armed conflict. Over the past 50 years, thousands of people have been murdered and millions affected by violence. High levels of inequality and eroding trust between citizens and government institutions have also tested the country’s democracy and rule of law.
+      
+      Against this backdrop, USAID and the Government of Colombia are bringing together organizations of varying footprints, attributes, and perspectives in an effort to enhance institutional accountability and transparency, improve public services, boost civic participation, and better include minority groups.
+    notes:
+      - text: 'World Bank Colombia'
+        link: https://data.worldbank.org/indicator/SI.POV.GINI?end=2017&locations=CO&start=1974&view=chart
+    embed: '<audio id="player" ><source src="https://media.rss.com/practice-of-partnership/2023_10_06_08_49_15_95f696ea-75c8-4702-82bf-17e8d199b5ef.mp3" type="audio/mp3" /></audio>'
+    guests:
+      - name: Carla Aguilar
+        title: Chief of Party, Responsible Governance, DAI 
+      - name: Karen Hussmann 
+        title: Chief of Party, Partners for Transparency, DAI 
+      - name: Andrés Hernández 
+        title: Executive Director, Transparencia por Colombia 
+      - name: Juliana Forero Montes
+        title: Project Coordinator, Cordupaz
+      
