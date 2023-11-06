@@ -64,7 +64,7 @@
                     {% endif %}
                   </div>
                   <div class="ml-3">
-                    <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900 mb-0"><a href="{{ author-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="text-daiLinks hover:brightness-95 hover:text-daiLinks"><span class="font-bold capitalize">{{ author-details[0].name | default:author }}{% if author-details[0].title %}, {% endif %} </span> <span class="text-xs">{{ author-details[0].title }}</span></a></p>
+                    <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900 mb-0 max-w-[150px] md:max-w-[200px] xl:max-w-[400px] truncate"><a href="{{ author-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="text-daiLinks hover:brightness-95 hover:text-daiLinks"><span class="font-bold capitalize">{{ author-details[0].name | default:author }}{% if author-details[0].title %}, {% endif %} </span> <span class="text-xs">{{ author-details[0].title }}</span></a></p>
                     <p class="text-xs font-medium text-gray-500 mb-0">Tags: <span class="font-bold">
                       {% for tag in postOne-tags %}
                         {{ tag }}{% unless forloop.last %}, {% endunless %}
@@ -149,7 +149,7 @@
               {% endif %}
             </div>
             <div class="ml-3">
-              <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900 mb-0 leading-3"><a href="{{ author-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="text-daiLinks hover:brightness-95 hover:text-daiLinks"><span class="font-bold capitalize">{{ author-details[0].name | default:author }}{% if author-details[0].title %}, {% endif %} </span> <span class="text-xs">{{ author-details[0].title }}</span></a></p>
+              <p class="text-sm font-medium text-gray-700 group-hover:text-gray-900 mb-0 leading-3 max-w-[150px] md:max-w-[200px] xl:max-w-[400px] truncate"><a href="{{ author-details[0].link | default:"https://www.dai.com/who-we-are/the-team"}}" class="text-daiLinks hover:brightness-95 hover:text-daiLinks"><span class="font-bold capitalize">{{ author-details[0].name | default:author }}{% if author-details[0].title %}, {% endif %} </span> <span class="text-xs">{{ author-details[0].title }}</span></a></p>
               <p class="text-xs font-medium text-gray-500 mb-0">{{post.data.date | relativeDate}} | {{ post.templateContent | timeToRead }} read</p>
             </div>
           </div>
