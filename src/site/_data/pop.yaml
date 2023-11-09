@@ -121,4 +121,21 @@ episodes:
         title: Executive Director, Transparencia por Colombia 
       - name: Juliana Forero Montes
         title: Project Coordinator, Cordupaz
-      
+  - number: 6
+    title: 'Two new approaches to local partnership for better governance and greater investment '
+    description: |
+      On our final episode of this series, we explore new practices and approaches to partnership that can drive local engagement, local ownership, and development results. 
+    fulldesc: |
+      We’ve reached the end of the Practice of Partnership series. We’ve discussed how local partnership can help grow economies and businesses, strengthen democracy, and provide the drive and innovation to help countries meet their climate change goals. As we’ve seen, driving local partnership isn’t a one-sized-fits-all approach because local partners aren’t a monolith. They include local businesses, NGOs, civil society organizations, investors, corporations, and government bodies. That means partnership needs to work for partners on their terms, not just the ones that international development is accustomed to. Two projects from our portfolio that are looking at new ways to work with local entities on their terms are INVEST and Human Capital Development or HCD+. 
+    notes:
+    - 
+    embed: '<audio id="player" ><source src="https://media.rss.com/practice-of-partnership/2023_11_09_15_25_49_1463cd25-1e40-4398-8339-b1f2daea230b.mp3" type="audio/mp3" /></audio>'
+    guests:
+      - name: Katie Tilahun
+        title: Partnerships Director for INVEST, DAI 
+      - name: Colin Hundermark
+        title: Co-Founder, Linea Capital South Africa
+      - name: Virtuous Igbodika
+        title: Associate Director of Program Management in Nigeria, DAI 
+      - name: Dr. Joe Abah
+        title: Nigeria Country Director, DAI     
