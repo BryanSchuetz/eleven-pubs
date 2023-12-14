@@ -18,7 +18,8 @@
             <a data-turbo="false" href="{{ post.url }}" class="block mt-4">
               <p class="text-xl font-semibold text-gray-900">{{ post.data.title }}</p>
             </a>
-            {% assign morePostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+            {% assign morePostAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | split:","%}
+            {% assign morePostAuthors = morePostAuthors | dehyphenArray %}
             {% if morePostAuthors[1] %}
             <!-- MULTIPLE POST AUTHORS -->
             <div class="mt-6 flex items-center">

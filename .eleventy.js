@@ -101,6 +101,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("pluck", function (arr, value) {
     return arr.filter((item) => item.includes(value));
   });
+  //Remove only first dash in author name
+  eleventyConfig.addFilter("dehyphen", function(string) {
+    return string.replace(/-/, " ");
+  });
+  //Remove first dash from each string in array of strings
+  eleventyConfig.addFilter("dehyphenArray", function(array) {
+    return array.map(function(string) {
+      return string.replace(/-/, " ");
+    });
+  });
   //Array items do not include string
   eleventyConfig.addFilter("pluckNot", function (arr, value) {
     return arr.filter((item) => !item.includes(value));

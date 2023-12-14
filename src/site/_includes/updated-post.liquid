@@ -1,5 +1,6 @@
 <!-- ASSIGNMENTS -->
-{% assign postAuthors = tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+{% assign postAuthors = tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | split:","%}
+{% assign postAuthors = postAuthors | dehyphenArray %}
 {% assign postTags = tags | pluckNot:"hash" %}
 <!-- POST HEADER -->
 <div class="relative overflow-hidden bg-daiLightGray">

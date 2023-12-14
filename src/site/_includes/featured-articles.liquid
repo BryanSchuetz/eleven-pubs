@@ -3,7 +3,8 @@
 {% assign postOne = collections.featuredPosts | first  %}
 <!-- SET AUTHORS We're doing a couple of odd things here (driven by Ghost constraints forcing us to pass a lot of our structured data as tags).-->
 <!-- Return subset of tags array with only hash-by tags, cast as a string, format the names properly, then move back to an array-->
-{% assign postOneAuthors = postOne.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+{% assign postOneAuthors = postOne.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | split:","%}
+{% assign postOneAuthors = postOneAuthors | dehyphenArray %}
 <!-- Return subset of tags array with only the non-internal tags -->
 {% assign postOne-tags = postOne.data.tags | pluckNot:"hash" %}
 <div class="bg-daiLightGray">
@@ -102,7 +103,8 @@
   <div class="grid grid-cols-2 gap-6 content-end max-w-5xl mx-auto bg-daiLightGray">
     {% assign postOthers = collections.featuredPosts %}
     {% for post in postOthers limit:2 offset:1 %}
-      {% assign postAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | replace:"-", " " | split:","%}
+      {% assign postAuthors = post.data.tags | pluck:"hash-by" | join:"," | remove:"hash-by-" | split:","%}
+      {% assign postAuthors = postAuthors | dehyphenArray %}
     <div class="bg-white z-10">
       <div class="bg-daiBlue">
         <h3 class="uppercase text-white pl-3 sm:pl-4 md:pl-6 py-6 mb-0">Developments</h3>
