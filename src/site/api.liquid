@@ -8,6 +8,7 @@ permalink: '/api.json'
       {
         "title": "{{ post.data.title }}",
         "url": "https://dai-global-developments.com/post-api/{{ post.data.title | slugify }}.json",
+        "date": "{{ post.date | date: "%Y-%m-%d" }}",
       }
     {% endfor %}
   ]

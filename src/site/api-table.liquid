@@ -1,0 +1,21 @@
+---
+title: "JSON API"
+permalink: '/api-table.html'
+---
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign sorted_posts = collections.hash-post | sort: 'data.title' %}
+    {% for post in sorted_posts %}
+    <tr>
+        <td><a href="{{post.url}}">{{ post.data.title }}</></td>
+      <td>{{ post.date | date: "%Y-%m-%d" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
