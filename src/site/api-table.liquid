@@ -7,6 +7,8 @@ permalink: '/api-table.html'
     <tr>
       <th>Title</th>
       <th>Date</th>
+      <th>Author</th>
+      <th>Tags</th>
     </tr>
   </thead>
   <tbody>
@@ -14,7 +16,11 @@ permalink: '/api-table.html'
     {% for post in sorted_posts %}
     <tr>
         <td><a href="{{post.url}}">{{ post.data.title }}</></td>
-      <td>{{ post.date | date: "%Y-%m-%d" }}</td>
+        <td>{{ post.date | date: "%Y-%m-%d" }}</td>
+        <td>{% assign hash_by_tags = post.data.tags | pluck: "hash-by" %}{% for tag in hash_by_tags %}
+            {{ tag | remove:"hash-by","" | dehyphen }} {% unless forloop.last %}| {% endunless %}
+        {% endfor %}</td>
+        <td>{% assign no_hash_tgags = post.data.tags | pluckNot:"hash" %}{% for tag in no_hash_tags %}{{ tag }}{% endfor %}</td>
     </tr>
     {% endfor %}
   </tbody>
