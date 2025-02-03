@@ -1,19 +1,15 @@
 episodes:
   - number: 1
     id: 762074030
-    title: Can gender equality make us healthier?
+    title: How does women’s empowerment relate to health?
     description: |
-      Most of us agree that equality is a good thing, but is there more than a moral argument for making our societies more equal? Can gender equality actually make our communities and countries healthier?
+      COVID-19 was bad for the planet, bad for democracy, and bad for healthcare—it also dramatically increased inequality. The social and health impacts on women were particularly bad.
     fulldesc: |
-      COVID-19 was bad for the planet, bad for democracy, and bad for healthcare—it also dramatically increased inequality.  
+      COVID-19 was bad for the planet, bad for democracy, and bad for healthcare—it also dramatically increased inequality. Between 2019 and 2021, the wealth of the top 0.001 percent grew 14 times more than the global average. But COVID didn’t just exacerbate economic inequality—there have been social consequences, too.
+      
+      The social and health impacts on women were particularly bad. According to the United Nations, one in two women say that they or a female they know has experienced violence since the COVID-19 pandemic. Women also picked up a larger share of the domestic burden during the pandemic—meaning unpaid work such as household chores, shopping, and childcare. Women’s labor force participation also declined, with more women taking time out to care for children or manage their households during lockdowns.
 
-      Between 2019 and 2021, the wealth of the top 0.001 percent grew 14 times more than the global average. But COVID didn’t just exacerbate economic inequality—there have been social consequences, too. 
-
-      The social and health impacts on women were particularly bad.  
-
-      According to the United Nations, one in two women say that they or a female they know has experienced violence since the COVID-19 pandemic. Women also picked up a larger share of the domestic burden during the pandemic—meaning unpaid work such as household chores, shopping, and childcare. Women’s labor force participation also declined, with more women taking time out to care for children or manage their households during lockdowns. 
-
-      Numerous inequality and empowerment metrics suggest that women fared worse than men as a result of COVID. But do these lost “equality gains” matter? Will gender equality really help us build a world that is more resilient? And is equality related to health?
+      Numerous inequality and empowerment metrics suggest that women fared worse than men as a result of COVID. But how does female empowerment relate to health?
     notes:
       - text: Violence Against Women During COVID-19, UN Women
         link: https://data.unwomen.org/publications/vaw-rga
@@ -33,11 +29,11 @@ episodes:
         title: Public Health Researcher, Ministry of Health, Chile
   - number: 2
     id: 762659007
-    title: Why aren’t men and women equal?
+    title: What are the social, economic, and political structures that foster stable communities?
     description: |
-      If there’s a gap between men and women, how do we know that empirically? How can we measure it? And what stands in the way of men and women being more equal? 
+      Social, economic, or political structures—such as laws or policies impact the stability of communities. Looking at the way these factors interact can help us understand some of the barriers to strong, stable societies. 
     fulldesc: |
-      If we want to talk about why men and women aren’t equal, we need to think about what inequality really is. Inequality has many dimensions. It’s not just about how much money or resources one group has compared to another. Inequality can also revolve around social, economic, or political structures—such as discriminatory laws or policies. Looking at the way inequality is measured can help us understand some of the barriers to equality between men and women.
+      Social, economic, or political structures—such as laws or policies impact the stability of communities. Looking at the way these factors interact can help us understand some of the barriers to strong, stable societies.
     notes:
       - text: The most recent GII was published in the 2021 Human Development Index report, p.291 
         link: https://hdr.undp.org/system/files/documents/global-report-document/hdr2021-22pdf_1.pdf
@@ -59,11 +55,11 @@ episodes:
     description: |
       For a long time, women in politics wasn’t a thing. People like Merkel, Marin, May, Sirleaf, and Arden have given us a vision for women as decision makers. Will more female politicians in positions of power make our societies healthier?
     fulldesc: |
-      For much of history, women lived in a man’s world where men were simply assumed to be stronger, better, and smarter. Women, accordingly had limited opportunities for political participation, and were frequently excluded from decision making. 
+      For much of history, women lived in a man’s world where men were simply assumed to be stronger, better, and smarter. Women, accordingly had limited opportunities for political participation, and were frequently excluded from decision making.
 
-      Thankfully, those attitudes seem to be shifting. According to the Gender Inequality Index, women on average hold about 25 percent of seats in parliaments globally, up from 13 percent in 2000—so, considerable progress has been made in just 20 years. 
+      Thankfully, those attitudes seem to be shifting. According to the Gender Inequality Index, women on average hold about 25 percent of seats in parliaments globally, up from 13 percent in 2000—so, considerable progress has been made in just 20 years.
 
-      Parliamentary participation is part of the Gender Inequality Index discussed in Episode 2. It falls under the “empowerment” dimension. In theory, empowering women in society means a greater number of choices for women. But does it have an empirical benefit in improving women’s health?
+      In theory, empowering women in society means a greater number of choices for women. But does it have an empirical benefit in improving women’s health?
     notes:
       - text: Maternal Mortality & Political Participation Reserach
         link: https://docs.iza.org/dp11590.pdf
@@ -87,13 +83,13 @@ episodes:
         title: Former Director of Programs, Consolidating Democracy in Pakistan, DAI
   - number: 4
     id: 763600848
-    title: Can better reproductive health make us more equal? 
+    title: Can better maternal health make us more equal?
     description: |
       How society treats a woman during pregnancy and childbirth is a signal of women’s status in society. Do we value maternal health as integral to the health of our communities? 
     fulldesc: |
-      The health of women in their most physically vulnerable moments affects the health of entire societies and the prospects for our next generation. The first 1,000 days of a child’s life, from conception to two years old, is the most critical period for brain development. A mother’s health and nutrition deeply influence the health of her child, even in utero. Access to healthcare, such as ante and postnatal care, or to skilled birth attendants, is the key to better survival rates for mothers and babies. 
+      The health of women in their most physically vulnerable moments affects the health of entire societies and the prospects for our next generation. The first 1,000 days of a child’s life, from conception to two years old, is the most critical period for brain development. A mother’s health and nutrition deeply influence the health of her child, even in utero. Access to healthcare, such as ante and postnatal care, or to skilled birth attendants, is the key to better survival rates for mothers and babies.
       
-      How society treats a woman during pregnancy and childbirth is also a signal of women’s status in society. We explore how improving reproductive health can improve gender equality across various dimensions, helping women become better educated, participate more in the workforce, and overcome chauvinism. 
+      How society treats a woman during pregnancy and childbirth is also a signal of women’s status in society. We explore how improving maternal health can help women become better educated and participate more in the workforce.
     notes:
       - text: DHS Survey Nigeria 2008
         link: https://dhsprogram.com/publications/publication-fr222-dhs-final-reports.cfm
@@ -111,9 +107,9 @@ episodes:
     id: 763852763
     title: Where do we go from here?
     description: |
-      What’s next and where do we go from here? As development practitioners and public health professionals, how do we make our work more gender equal?  
+      What’s next and where do we go from here? As development practitioners and public health professionals, how do we empower women?  
     fulldesc: |
-      Where do we go from here? If you work in development or in public health, you know there’s a mountain of analysis and research about how best to support women and girls. We can’t do that debate justice in this episode, but we try to break through the noise to distil three key points that should help us make our workplaces, industries, communities, and societies more equitable.
+      Where do we go from here? If you work in development or in public health, you know there’s a mountain of analysis and research about how best to support women and girls. We can’t do that debate justice in this episode, but we try to break through the noise to distil three key points that should help us make our workplaces, industries, communities, and societies better.
     notes:
       - text: Wild Network
         link: https://www.wildleadershipforum.org/
